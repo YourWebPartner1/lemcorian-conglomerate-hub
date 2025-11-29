@@ -53,13 +53,13 @@ const Index = () => {
       </section>
 
       {/* Introduction Section */}
-      <section className="py-24 bg-background">
+      <section className="py-28 md:py-32 bg-background">
         <div className="container mx-auto px-4 max-w-5xl">
           <div className="text-center space-y-8">
-            <h2 className="text-3xl md:text-4xl font-bold text-foreground font-serif">
+            <h2 className="font-serif text-4xl md:text-5xl font-bold text-foreground">
               Global Multidivision Conglomerate
             </h2>
-            <p className="text-lg md:text-xl text-foreground/90 leading-relaxed max-w-4xl mx-auto">
+            <p className="text-xl md:text-2xl text-foreground/80 leading-relaxed max-w-4xl mx-auto">
               Lemcorian is a diversified conglomerate operating across agriculture, chemicals, and medical equipment. 
               Our structure reflects clarity, expansion, and strategic leadership.
             </p>
@@ -68,13 +68,13 @@ const Index = () => {
       </section>
 
       {/* Corporate Division Overview Section */}
-      <section className="py-24 bg-muted/30">
+      <section className="py-28 md:py-32 bg-muted/30">
         <div className="container mx-auto px-4 max-w-7xl">
-          <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold text-foreground font-serif mb-4">
+          <div className="text-center mb-20">
+            <h2 className="font-serif text-4xl md:text-5xl font-bold text-foreground mb-6">
               Corporate Division Overview
             </h2>
-            <div className="w-24 h-1 bg-primary mx-auto"></div>
+            <div className="w-32 h-1 bg-primary mx-auto"></div>
           </div>
           
           <div className="grid md:grid-cols-3 gap-8">
@@ -168,71 +168,71 @@ const Index = () => {
       </section>
 
       {/* Why Choose Lemcorian Section */}
-      <section className="py-24 bg-background">
-        <div className="container mx-auto px-4 max-w-5xl">
-          <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold text-foreground font-serif mb-3">
+      <section className="py-28 md:py-32 bg-background">
+        <div className="container mx-auto px-4 max-w-6xl">
+          <div className="text-center mb-20">
+            <h2 className="font-serif text-4xl md:text-5xl font-bold text-foreground mb-6">
               Why Choose LEMCORIAN
             </h2>
-            <div className="w-24 h-1 bg-primary mx-auto"></div>
+            <div className="w-32 h-1 bg-primary mx-auto"></div>
           </div>
 
-          <div className="grid md:grid-cols-2 gap-6">
-            <div className="flex items-start gap-4">
-              <CheckCircle2 className="h-6 w-6 text-primary flex-shrink-0 mt-1" />
+          <div className="grid md:grid-cols-2 gap-10">
+            <div className="flex items-start gap-6 p-6 rounded-lg bg-card border border-border hover:shadow-md transition-shadow">
+              <CheckCircle2 className="h-8 w-8 text-primary flex-shrink-0 mt-1" />
               <div>
-                <h3 className="font-semibold text-foreground mb-2">Global Presence</h3>
-                <p className="text-foreground/70">
+                <h3 className="font-semibold text-foreground text-xl mb-3">Global Presence</h3>
+                <p className="text-muted-foreground text-lg leading-relaxed">
                   Operating across multiple continents with established supply chains and distribution networks worldwide.
                 </p>
               </div>
             </div>
 
-            <div className="flex items-start gap-4">
-              <CheckCircle2 className="h-6 w-6 text-primary flex-shrink-0 mt-1" />
+            <div className="flex items-start gap-6 p-6 rounded-lg bg-card border border-border hover:shadow-md transition-shadow">
+              <CheckCircle2 className="h-8 w-8 text-primary flex-shrink-0 mt-1" />
               <div>
-                <h3 className="font-semibold text-foreground mb-2">Quality Assurance</h3>
-                <p className="text-foreground/70">
+                <h3 className="font-semibold text-foreground text-xl mb-3">Quality Assurance</h3>
+                <p className="text-muted-foreground text-lg leading-relaxed">
                   Rigorous quality control measures and international certifications across all product lines.
                 </p>
               </div>
             </div>
 
-            <div className="flex items-start gap-4">
-              <CheckCircle2 className="h-6 w-6 text-primary flex-shrink-0 mt-1" />
+            <div className="flex items-start gap-6 p-6 rounded-lg bg-card border border-border hover:shadow-md transition-shadow">
+              <CheckCircle2 className="h-8 w-8 text-primary flex-shrink-0 mt-1" />
               <div>
-                <h3 className="font-semibold text-foreground mb-2">Diverse Portfolio</h3>
-                <p className="text-foreground/70">
+                <h3 className="font-semibold text-foreground text-xl mb-3">Diverse Portfolio</h3>
+                <p className="text-muted-foreground text-lg leading-relaxed">
                   Three specialized divisions serving agricultural, chemical, and medical sectors with expertise.
                 </p>
               </div>
             </div>
 
-            <div className="flex items-start gap-4">
-              <CheckCircle2 className="h-6 w-6 text-primary flex-shrink-0 mt-1" />
+            <div className="flex items-start gap-6 p-6 rounded-lg bg-card border border-border hover:shadow-md transition-shadow">
+              <CheckCircle2 className="h-8 w-8 text-primary flex-shrink-0 mt-1" />
               <div>
-                <h3 className="font-semibold text-foreground mb-2">Sustainable Practices</h3>
-                <p className="text-foreground/70">
+                <h3 className="font-semibold text-foreground text-xl mb-3">Sustainable Practices</h3>
+                <p className="text-muted-foreground text-lg leading-relaxed">
                   Commitment to environmental responsibility and ethical business practices in all operations.
                 </p>
               </div>
             </div>
 
-            <div className="flex items-start gap-4">
-              <CheckCircle2 className="h-6 w-6 text-primary flex-shrink-0 mt-1" />
+            <div className="flex items-start gap-6 p-6 rounded-lg bg-card border border-border hover:shadow-md transition-shadow">
+              <CheckCircle2 className="h-8 w-8 text-primary flex-shrink-0 mt-1" />
               <div>
-                <h3 className="font-semibold text-foreground mb-2">Industry Expertise</h3>
-                <p className="text-foreground/70">
+                <h3 className="font-semibold text-foreground text-xl mb-3">Industry Expertise</h3>
+                <p className="text-muted-foreground text-lg leading-relaxed">
                   Decades of combined experience with specialized knowledge in each operational sector.
                 </p>
               </div>
             </div>
 
-            <div className="flex items-start gap-4">
-              <CheckCircle2 className="h-6 w-6 text-primary flex-shrink-0 mt-1" />
+            <div className="flex items-start gap-6 p-6 rounded-lg bg-card border border-border hover:shadow-md transition-shadow">
+              <CheckCircle2 className="h-8 w-8 text-primary flex-shrink-0 mt-1" />
               <div>
-                <h3 className="font-semibold text-foreground mb-2">Reliable Partnership</h3>
-                <p className="text-foreground/70">
+                <h3 className="font-semibold text-foreground text-xl mb-3">Reliable Partnership</h3>
+                <p className="text-muted-foreground text-lg leading-relaxed">
                   Proven track record of delivering consistent quality and maintaining long-term business relationships.
                 </p>
               </div>
