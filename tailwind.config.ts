@@ -57,6 +57,16 @@ export default {
           border: "hsl(var(--sidebar-border))",
           ring: "hsl(var(--sidebar-ring))",
         },
+        corporate: {
+          navy: "hsl(var(--corporate-navy))",
+          slate: "hsl(var(--corporate-slate))",
+          light: "hsl(var(--corporate-light))",
+          accent: "hsl(var(--corporate-accent))",
+        },
+      },
+      fontFamily: {
+        sans: ["Inter", "system-ui", "sans-serif"],
+        serif: ["Merriweather", "Georgia", "serif"],
       },
       borderRadius: {
         lg: "var(--radius)",
