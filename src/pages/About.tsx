@@ -12,21 +12,21 @@ const About = () => {
             About LEMCORIAN
           </h1>
 
-          <div className="prose prose-lg max-w-none space-y-8">
+          <div className="prose prose-lg max-w-none space-y-10">
             <section>
-              <h2 className="text-2xl font-semibold text-foreground mb-4">
+              <h2 className="text-3xl font-semibold text-foreground mb-6 font-serif">
                 Who We Are
               </h2>
-              <p className="text-foreground/80 leading-relaxed">
-                LEMCORIAN is a globally recognized multidivision conglomerate with a diverse portfolio spanning three major industries: Agricultural Products, Chemicals, and Medical Equipment & Instruments. Our organization operates with a commitment to excellence, innovation, and sustainable growth across all sectors.
+              <p className="text-lg text-foreground/90 leading-relaxed mb-4">
+                Lemcorian operates as a global conglomerate with three major verticals — Agricultural Products, Chemicals, and Medical Equipment & Instruments. Our organization is built on diversification, operational strength, and a commitment to delivering essential products across key sectors.
               </p>
-              <p className="text-foreground/80 leading-relaxed">
-                Established with a vision to create value across multiple industries, LEMCORIAN has evolved into a trusted partner for businesses and consumers worldwide. Our integrated approach allows us to leverage synergies across divisions while maintaining specialized expertise in each sector.
+              <p className="text-lg text-foreground/90 leading-relaxed">
+                We emphasize clarity, structure, and strategic expansion across all branches. Each division operates with specialized expertise while benefiting from the integrated strength of our conglomerate structure.
               </p>
             </section>
 
             <section>
-              <h2 className="text-2xl font-semibold text-foreground mb-4">
+              <h2 className="text-3xl font-semibold text-foreground mb-6 font-serif">
                 Our Divisions
               </h2>
               
@@ -70,14 +70,14 @@ const About = () => {
             </section>
 
             <section>
-              <h2 className="text-2xl font-semibold text-foreground mb-4">
+              <h2 className="text-3xl font-semibold text-foreground mb-6 font-serif">
                 Our Commitment
               </h2>
-              <p className="text-foreground/80 leading-relaxed">
-                LEMCORIAN is dedicated to operational excellence, ethical business practices, and sustainable growth. We invest in our people, technology, and infrastructure to ensure we remain at the forefront of our industries. Our global presence allows us to serve diverse markets while maintaining the agility to respond to local needs.
+              <p className="text-lg text-foreground/90 leading-relaxed mb-4">
+                LEMCORIAN is dedicated to operational excellence, ethical business practices, and sustainable growth. We invest in our people, technology, and infrastructure to ensure we remain at the forefront of our industries.
               </p>
-              <p className="text-foreground/80 leading-relaxed">
-                As we continue to expand our operations and capabilities, we remain focused on creating value for our stakeholders, supporting our employees, and contributing positively to the communities where we operate.
+              <p className="text-lg text-foreground/90 leading-relaxed">
+                Our global presence allows us to serve diverse markets while maintaining the agility to respond to local needs. As we continue to expand our operations and capabilities, we remain focused on creating value for our stakeholders and contributing positively to the communities where we operate.
               </p>
             </section>
           </div>
