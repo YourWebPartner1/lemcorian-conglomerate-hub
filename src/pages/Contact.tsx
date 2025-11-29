@@ -50,7 +50,13 @@ const Contact = () => {
             Contact Us
           </h1>
 
-          <div className="grid md:grid-cols-2 gap-12">
+          <div className="mb-8">
+            <p className="text-lg text-foreground/80">
+              For corporate inquiries or partnerships, contact our headquarters.
+            </p>
+          </div>
+
+          <div className="grid md:grid-cols-2 gap-12 mt-12">
             {/* Contact Form */}
             <div>
               <h2 className="text-2xl font-semibold text-foreground mb-6">

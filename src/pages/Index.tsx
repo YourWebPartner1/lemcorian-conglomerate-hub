@@ -31,26 +31,33 @@ const Index = () => {
       </section>
 
       {/* Introduction Section */}
-      <section className="py-20 bg-background">
-        <div className="container mx-auto px-4 max-w-4xl text-center">
-          <p className="text-lg md:text-xl text-foreground/80 leading-relaxed">
-            LEMCORIAN is a globally recognized conglomerate operating across three major industries: 
-            Agricultural Products, Chemicals, and Medical Equipment & Instruments. With a commitment 
-            to excellence and innovation, we serve diverse markets worldwide through our specialized 
-            divisions, each maintaining the highest standards of quality and reliability.
-          </p>
+      <section className="py-24 bg-background">
+        <div className="container mx-auto px-4 max-w-5xl">
+          <div className="text-center space-y-8">
+            <h2 className="text-3xl md:text-4xl font-bold text-foreground font-serif">
+              Global Multidivision Conglomerate
+            </h2>
+            <p className="text-lg md:text-xl text-foreground/90 leading-relaxed max-w-4xl mx-auto">
+              Lemcorian is a diversified conglomerate operating across agriculture, chemicals, and medical equipment. 
+              Our structure reflects clarity, expansion, and strategic leadership.
+            </p>
+          </div>
         </div>
       </section>
 
       {/* Flowchart Section */}
-      <section className="py-20 bg-muted/30">
+      <section className="py-24 bg-muted/30">
         <div className="container mx-auto px-4 max-w-4xl">
-          <h2 className="text-3xl md:text-4xl font-bold text-center text-foreground mb-12 font-serif">
-            Our Corporate Structure
-          </h2>
+          <div className="text-center mb-12">
+            <h2 className="text-3xl md:text-4xl font-bold text-foreground font-serif mb-3">
+              Corporate Division Flowchart
+            </h2>
+            <div className="w-24 h-1 bg-primary mx-auto"></div>
+          </div>
           
-          <div className="bg-card border border-border p-8 md:p-12 rounded-sm">
-            <pre className="font-mono text-sm md:text-base text-foreground leading-relaxed overflow-x-auto">
+          <div className="max-w-2xl mx-auto">
+            <div className="bg-card border-2 border-border p-10 md:p-16 rounded-sm shadow-sm">
+              <pre className="font-mono text-base md:text-lg text-foreground leading-loose overflow-x-auto">
 {`LEMCORIAN
 │
 ├── Agricultural Products
@@ -66,17 +73,21 @@ const Index = () => {
        ├── Gloves
        ├── Masks
        └── etc.`}
-            </pre>
+              </pre>
+            </div>
           </div>
         </div>
       </section>
 
       {/* Why Choose Lemcorian Section */}
-      <section className="py-20 bg-background">
-        <div className="container mx-auto px-4 max-w-4xl">
-          <h2 className="text-3xl md:text-4xl font-bold text-center text-foreground mb-12 font-serif">
-            Why Choose LEMCORIAN
-          </h2>
+      <section className="py-24 bg-background">
+        <div className="container mx-auto px-4 max-w-5xl">
+          <div className="text-center mb-16">
+            <h2 className="text-3xl md:text-4xl font-bold text-foreground font-serif mb-3">
+              Why Choose LEMCORIAN
+            </h2>
+            <div className="w-24 h-1 bg-primary mx-auto"></div>
+          </div>
 
           <div className="grid md:grid-cols-2 gap-6">
             <div className="flex items-start gap-4">
