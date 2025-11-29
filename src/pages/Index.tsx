@@ -2,7 +2,7 @@ import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
-import heroBackground from "@/assets/hero-background.jpg";
+import heroBackgroundPremium from "@/assets/hero-background-premium.jpg";
 import agriculturalProducts from "@/assets/agricultural-products.jpg";
 import chemicals from "@/assets/chemicals.jpg";
 import medicalEquipment from "@/assets/medical-equipment.jpg";
@@ -16,20 +16,39 @@ const Index = () => {
       {/* Hero Section */}
       <section 
         className="relative min-h-screen flex items-center justify-center bg-cover bg-center bg-no-repeat"
-        style={{ backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(${heroBackground})` }}
+        style={{ 
+          backgroundImage: `linear-gradient(to bottom, rgba(10, 26, 63, 0.85), rgba(10, 26, 63, 0.4)), url(${heroBackgroundPremium})` 
+        }}
       >
-        <div className="container mx-auto px-4 text-center">
-          <h1 className="text-5xl md:text-7xl font-bold text-white font-serif mb-6">
+        <div className="container mx-auto px-4 text-center py-32">
+          <h1 className="text-6xl md:text-8xl font-bold text-white font-serif mb-8 tracking-[0.15em]">
             LEMCORIAN
           </h1>
-          <p className="text-xl md:text-2xl text-white/90 mb-8 max-w-2xl mx-auto">
+          <p className="text-2xl md:text-3xl text-white/95 mb-6 max-w-3xl mx-auto tracking-wide font-light">
             A Global Multidivision Conglomerate
           </p>
-          <Link to="/divisions">
-            <Button size="lg" variant="secondary" className="font-semibold">
-              Explore Our Divisions
-            </Button>
-          </Link>
+          <p className="text-lg md:text-xl text-white/80 mb-12 max-w-3xl mx-auto tracking-wide">
+            Operating across Agriculture, Chemicals, and Medical Equipment & Instruments.
+          </p>
+          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
+            <Link to="/divisions">
+              <Button 
+                size="lg" 
+                className="bg-white text-[#0A1A3F] hover:bg-white/90 font-semibold px-8 py-6 text-base shadow-lg"
+              >
+                Explore Our Divisions
+              </Button>
+            </Link>
+            <Link to="/about">
+              <Button 
+                size="lg" 
+                variant="outline"
+                className="bg-transparent border-2 border-white text-white hover:bg-white/10 font-semibold px-8 py-6 text-base"
+              >
+                Learn More About Us
+              </Button>
+            </Link>
+          </div>
         </div>
       </section>
 
