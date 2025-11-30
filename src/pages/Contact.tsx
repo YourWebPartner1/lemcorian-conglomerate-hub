@@ -47,7 +47,7 @@ const Contact = () => {
         title="Contact Us"
         description="Contact Lemcorian for corporate inquiries, partnerships, or business opportunities. Reach out to our headquarters for information about our agricultural products, chemicals, and medical equipment divisions."
         keywords="Lemcorian contact, corporate inquiries, business partnerships, contact information, corporate headquarters, email, phone"
-        image="/hero-background-premium.jpg"
+        image={`${import.meta.env.BASE_URL}hero-background-premium.jpg`}
         url="/contact"
       />
       <Navigation />

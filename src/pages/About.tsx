@@ -1,7 +1,6 @@
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import SEO from "@/components/SEO";
-import aboutBackground from "@/assets/about-background.jpg";
 import { Shield, Users, Target, Leaf } from "lucide-react";
 
 const About = () => {
@@ -11,7 +10,7 @@ const About = () => {
         title="About Lemcorian"
         description="Learn about Lemcorian, a global multidivision conglomerate with operations spanning agriculture, chemicals, and medical equipment. Discover our values, divisions, and commitment to excellence."
         keywords="Lemcorian, about, corporate, conglomerate, agriculture, chemicals, medical equipment, global operations, company values, sustainability"
-        image="/about-background.jpg"
+        image={`${import.meta.env.BASE_URL}about-background.jpg`}
         url="/about"
       />
       <Navigation />

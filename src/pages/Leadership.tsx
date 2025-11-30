@@ -1,32 +1,31 @@
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import SEO from "@/components/SEO";
-import executivePlaceholder from "@/assets/executive-placeholder.jpg";
 
 const Leadership = () => {
   const executiveLeadership = [
     {
       title: "Chairman & Group Director",
       description: "Oversees strategic vision, corporate governance, and long-term growth across all divisions of the Lemcorian Group.",
-      image: executivePlaceholder,
+      image: `${import.meta.env.BASE_URL}executive-placeholder.jpg`,
       alt: "Chairman & Group Director - Lemcorian Executive Leadership",
     },
     {
       title: "Chief Operating Officer",
       description: "Manages day-to-day operations, ensures operational efficiency, and coordinates activities across all business divisions.",
-      image: executivePlaceholder,
+      image: `${import.meta.env.BASE_URL}executive-placeholder.jpg`,
       alt: "Chief Operating Officer - Lemcorian Executive Leadership",
     },
     {
       title: "Chief Financial Officer",
       description: "Responsible for financial planning, risk management, and maintaining fiscal discipline across the conglomerate.",
-      image: executivePlaceholder,
+      image: `${import.meta.env.BASE_URL}executive-placeholder.jpg`,
       alt: "Chief Financial Officer - Lemcorian Executive Leadership",
     },
     {
       title: "Chief Compliance Officer",
       description: "Ensures regulatory compliance, corporate integrity, and adherence to legal standards across all operations.",
-      image: executivePlaceholder,
+      image: `${import.meta.env.BASE_URL}executive-placeholder.jpg`,
       alt: "Chief Compliance Officer - Lemcorian Executive Leadership",
     },
   ];
@@ -35,19 +34,19 @@ const Leadership = () => {
     {
       title: "Head of Agricultural Products",
       description: "Leads the Agricultural Products division, overseeing coffee and vegetable operations, supply chain, and quality standards.",
-      image: executivePlaceholder,
+      image: `${import.meta.env.BASE_URL}executive-placeholder.jpg`,
       alt: "Head of Agricultural Products - Lemcorian Division Leadership",
     },
     {
       title: "Head of Chemicals Division",
       description: "Manages industrial and pharmaceutical chemical operations, ensuring safety compliance and production excellence.",
-      image: executivePlaceholder,
+      image: `${import.meta.env.BASE_URL}executive-placeholder.jpg`,
       alt: "Head of Chemicals Division - Lemcorian Division Leadership",
     },
     {
       title: "Head of Medical Equipment & Instruments",
       description: "Directs medical equipment manufacturing and distribution, including syringes, gloves, masks, and essential healthcare instruments.",
-      image: executivePlaceholder,
+      image: `${import.meta.env.BASE_URL}executive-placeholder.jpg`,
       alt: "Head of Medical Equipment & Instruments - Lemcorian Division Leadership",
     },
   ];
@@ -58,7 +57,7 @@ const Leadership = () => {
         title="Leadership"
         description="Meet the executive leadership team and division heads at Lemcorian. Our experienced professionals guide strategic direction and operational excellence across all business divisions."
         keywords="Lemcorian leadership, executives, management, CEO, CFO, COO, division heads, corporate leadership, management team"
-        image="/executive-placeholder.jpg"
+        image={`${import.meta.env.BASE_URL}executive-placeholder.jpg`}
         url="/leadership"
       />
       <Navigation />

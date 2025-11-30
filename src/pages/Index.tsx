@@ -3,11 +3,6 @@ import Footer from "@/components/Footer";
 import SEO from "@/components/SEO";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
-import heroWorldMap from "@/assets/hero-background-premium.jpg";
-import agriculturalProducts from "@/assets/agricultural-products.jpg";
-import chemicals from "@/assets/chemicals.jpg";
-import medicalEquipment from "@/assets/medical-equipment.jpg";
-import globalReach from "@/assets/global-reach.jpg";
 import { CheckCircle2, Globe2, TrendingUp, Award } from "lucide-react";
 
 const Index = () => {
@@ -17,7 +12,7 @@ const Index = () => {
         title="Lemcorian – Global Multidivision Conglomerate"
         description="Lemcorian is a global conglomerate operating across agricultural products, chemicals, and medical equipment. Discover our diversified business divisions and global operations."
         keywords="Lemcorian, conglomerate, agriculture, chemicals, medical equipment, corporate, global enterprise, agricultural products, coffee, vegetables, industrial chemicals, pharmaceutical, medical supplies"
-        image="/hero-background-premium.jpg"
+        image={`${import.meta.env.BASE_URL}hero-background-premium.jpg`}
         url="/"
       />
       <Navigation />
@@ -26,7 +21,7 @@ const Index = () => {
       <section 
         className="relative min-h-screen flex items-center justify-center bg-cover bg-center bg-no-repeat pt-10 md:pt-20 lg:pt-28"
         style={{ 
-          backgroundImage: `linear-gradient(to bottom, rgba(10, 26, 63, 0.85), rgba(10, 26, 63, 0.4)), url(${heroWorldMap})` 
+          backgroundImage: `linear-gradient(to bottom, rgba(10, 26, 63, 0.85), rgba(10, 26, 63, 0.4)), url(${import.meta.env.BASE_URL}hero-background-premium.jpg)` 
         }}
       >
         <div className="container mx-auto px-4 text-center py-12 md:py-20" data-aos="fade-up">
@@ -93,7 +88,7 @@ const Index = () => {
             <div className="bg-card border border-border rounded-lg shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col h-full overflow-hidden" data-aos="zoom-in">
               <div className="w-full h-[220px] overflow-hidden">
                 <img 
-                  src={agriculturalProducts} 
+                  src={`${import.meta.env.BASE_URL}agricultural-products.jpg`} 
                   alt="Coffee beans and fresh produce from Lemcorian Agricultural Products division" 
                   className="w-full h-full object-cover max-w-full"
                   loading="lazy"
@@ -123,7 +118,7 @@ const Index = () => {
             <div className="bg-card border border-border rounded-lg shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col h-full overflow-hidden" data-aos="zoom-in" data-aos-delay="100">
               <div className="w-full h-[220px] overflow-hidden">
                 <img 
-                  src={chemicals} 
+                  src={`${import.meta.env.BASE_URL}chemicals.jpg`} 
                   alt="Industrial laboratory and chemical plant operations at Lemcorian Chemicals division" 
                   className="w-full h-full object-cover max-w-full"
                   loading="lazy"
@@ -153,7 +148,7 @@ const Index = () => {
             <div className="bg-card border border-border rounded-lg shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col h-full overflow-hidden" data-aos="zoom-in" data-aos-delay="200">
               <div className="w-full h-[220px] overflow-hidden">
                 <img 
-                  src={medicalEquipment} 
+                  src={`${import.meta.env.BASE_URL}medical-equipment.jpg`} 
                   alt="Medical equipment including syringes, gloves, and medical tools from Lemcorian Medical Equipment division" 
                   className="w-full h-full object-cover max-w-full"
                   loading="lazy"
@@ -193,7 +188,7 @@ const Index = () => {
       {/* Global Reach Section */}
       <section 
         className="py-10 md:py-14 lg:py-20 bg-cover bg-center relative"
-        style={{ backgroundImage: `url(${globalReach})` }}
+        style={{ backgroundImage: `url(${import.meta.env.BASE_URL}global-reach.jpg)` }}
         data-aos="fade-up"
       >
         <div className="absolute inset-0 bg-primary/90"></div>
