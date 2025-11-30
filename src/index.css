@@ -2,9 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
+<<<<<<< HEAD
 /* AOS Animation Library */
 @import 'aos/dist/aos.css';
 
+=======
+>>>>>>> a3881d06226b27b2f91d5478631afbe768f212da
 /* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
 All colors MUST be HSL.
 */
@@ -107,6 +110,7 @@ All colors MUST be HSL.
   }
 
   body {
+<<<<<<< HEAD
     @apply bg-background text-foreground overflow-x-hidden;
     line-height: 1.7;
     /* Fallback fonts while Google Fonts load */
@@ -122,6 +126,10 @@ All colors MUST be HSL.
   /* Apply Inter font when loaded */
   body.fonts-loaded {
     font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+=======
+    @apply bg-background text-foreground;
+    line-height: 1.7;
+>>>>>>> a3881d06226b27b2f91d5478631afbe768f212da
   }
   
   h1, h2, h3, h4, h5, h6 {

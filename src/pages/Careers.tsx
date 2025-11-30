@@ -1,12 +1,16 @@
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
+<<<<<<< HEAD
 import SEO from "@/components/SEO";
+=======
+>>>>>>> a3881d06226b27b2f91d5478631afbe768f212da
 import { Link } from "react-router-dom";
 import careersBackground from "@/assets/careers-background.jpg";
 
 const Careers = () => {
   return (
     <div className="min-h-screen flex flex-col bg-background">
+<<<<<<< HEAD
       <SEO
         title="Careers"
         description="Build your future with Lemcorian. Join a diversified conglomerate offering career opportunities across agricultural products, chemicals, and medical equipment divisions. Explore current openings and professional development programs."
@@ -14,11 +18,14 @@ const Careers = () => {
         image="/careers-background.jpg"
         url="/careers"
       />
+=======
+>>>>>>> a3881d06226b27b2f91d5478631afbe768f212da
       <Navigation />
       
       <main className="flex-1">
         {/* Hero Section */}
         <section 
+<<<<<<< HEAD
           className="pt-10 md:pt-20 lg:pt-28 pb-12 md:pb-20 bg-cover bg-center relative"
           style={{ backgroundImage: `linear-gradient(to bottom, rgba(10, 26, 63, 0.85), rgba(10, 26, 63, 0.75)), url(${careersBackground})` }}
         >
@@ -28,12 +35,24 @@ const Careers = () => {
               Build Your Future with Lemcorian
             </h1>
             <p className="text-base md:text-xl lg:text-2xl max-w-3xl text-primary-foreground/90 leading-relaxed">
+=======
+          className="py-24 md:py-32 bg-cover bg-center relative"
+          style={{ backgroundImage: `url(${careersBackground})` }}
+        >
+          <div className="absolute inset-0 bg-primary/85"></div>
+          <div className="container mx-auto px-4 relative z-10">
+            <h1 className="font-serif text-4xl md:text-6xl font-bold mb-6 text-primary-foreground">
+              Build Your Future with Lemcorian
+            </h1>
+            <p className="text-xl md:text-2xl max-w-3xl text-primary-foreground/90 leading-relaxed">
+>>>>>>> a3881d06226b27b2f91d5478631afbe768f212da
               Join a diversified conglomerate committed to growth, structure, and excellence. At Lemcorian, we offer opportunities across multiple divisions with clear pathways for professional development and career advancement.
             </p>
           </div>
         </section>
 
       {/* Why Work With Us */}
+<<<<<<< HEAD
         <section className="py-10 md:py-14 lg:py-20" data-aos="fade-up">
           <div className="container mx-auto px-4 md:px-6 max-w-6xl">
             <div className="text-center mb-12 md:mb-16 lg:mb-20">
@@ -57,6 +76,28 @@ const Careers = () => {
                   Commitment to operational excellence and corporate integrity
                 </li>
                 <li className="border-l-4 border-primary pl-6 md:pl-8 py-4 md:py-6 bg-card rounded-r-lg shadow-sm hover:shadow-md transition-all duration-300">
+=======
+        <section className="py-20 md:py-28">
+          <div className="container mx-auto px-4">
+            <h2 className="font-serif text-3xl md:text-5xl font-bold mb-16 text-foreground">
+              Why Work With Us
+            </h2>
+            <div className="max-w-5xl">
+              <ul className="space-y-6 text-lg">
+                <li className="border-l-4 border-primary pl-8 py-4 bg-card rounded-r-lg shadow-sm hover:shadow-md transition-all duration-300">
+                  Opportunities across multiple business divisions and sectors
+                </li>
+                <li className="border-l-4 border-primary pl-8 py-4 bg-card rounded-r-lg shadow-sm hover:shadow-md transition-all duration-300">
+                  Structured career development and professional growth programs
+                </li>
+                <li className="border-l-4 border-primary pl-8 py-4 bg-card rounded-r-lg shadow-sm hover:shadow-md transition-all duration-300">
+                  Work with a globally-focused conglomerate with clear strategic direction
+                </li>
+                <li className="border-l-4 border-primary pl-8 py-4 bg-card rounded-r-lg shadow-sm hover:shadow-md transition-all duration-300">
+                  Commitment to operational excellence and corporate integrity
+                </li>
+                <li className="border-l-4 border-primary pl-8 py-4 bg-card rounded-r-lg shadow-sm hover:shadow-md transition-all duration-300">
+>>>>>>> a3881d06226b27b2f91d5478631afbe768f212da
                   Competitive compensation and comprehensive benefits
                 </li>
               </ul>
@@ -65,6 +106,7 @@ const Careers = () => {
         </section>
 
         {/* Current Openings */}
+<<<<<<< HEAD
         <section className="py-10 md:py-14 lg:py-20 bg-muted/30" data-aos="fade-up">
           <div className="container mx-auto px-4 md:px-6 max-w-6xl">
             <div className="text-center mb-12 md:mb-16 lg:mb-20">
@@ -79,38 +121,76 @@ const Careers = () => {
                   Agricultural Products Division
                 </h3>
                 <p className="text-base md:text-lg text-muted-foreground leading-relaxed">
+=======
+        <section className="py-20 md:py-28 bg-muted/30">
+          <div className="container mx-auto px-4">
+            <h2 className="font-serif text-3xl md:text-5xl font-bold mb-16 text-foreground">
+              Current Openings
+            </h2>
+            <div className="max-w-5xl space-y-6">
+              <div className="bg-card border border-border p-8 rounded-lg shadow-sm hover:shadow-lg transition-all duration-300 hover:scale-105">
+                <h3 className="font-serif text-2xl font-bold text-foreground mb-3">
+                  Agricultural Products Division
+                </h3>
+                <p className="text-muted-foreground text-lg">
+>>>>>>> a3881d06226b27b2f91d5478631afbe768f212da
                   Supply Chain Manager, Quality Control Specialist, Operations Coordinator
                 </p>
               </div>
 
+<<<<<<< HEAD
               <div className="bg-card border border-border p-6 md:p-8 rounded-lg shadow-sm hover:shadow-lg transition-all duration-300" data-aos="zoom-in" data-aos-delay="100">
                 <h3 className="font-serif text-xl md:text-2xl font-bold text-foreground mb-3">
                   Chemicals Division
                 </h3>
                 <p className="text-base md:text-lg text-muted-foreground leading-relaxed">
+=======
+              <div className="bg-card border border-border p-8 rounded-lg shadow-sm hover:shadow-lg transition-all duration-300 hover:scale-105">
+                <h3 className="font-serif text-2xl font-bold text-foreground mb-3">
+                  Chemicals Division
+                </h3>
+                <p className="text-muted-foreground text-lg">
+>>>>>>> a3881d06226b27b2f91d5478631afbe768f212da
                   Chemical Engineer, Production Supervisor, Safety Compliance Officer
                 </p>
               </div>
 
+<<<<<<< HEAD
               <div className="bg-card border border-border p-6 md:p-8 rounded-lg shadow-sm hover:shadow-lg transition-all duration-300" data-aos="zoom-in" data-aos-delay="200">
                 <h3 className="font-serif text-xl md:text-2xl font-bold text-foreground mb-3">
                   Medical Equipment & Instruments Division
                 </h3>
                 <p className="text-base md:text-lg text-muted-foreground leading-relaxed">
+=======
+              <div className="bg-card border border-border p-8 rounded-lg shadow-sm hover:shadow-lg transition-all duration-300 hover:scale-105">
+                <h3 className="font-serif text-2xl font-bold text-foreground mb-3">
+                  Medical Equipment & Instruments Division
+                </h3>
+                <p className="text-muted-foreground text-lg">
+>>>>>>> a3881d06226b27b2f91d5478631afbe768f212da
                   Manufacturing Specialist, Quality Assurance Manager, Distribution Coordinator
                 </p>
               </div>
 
+<<<<<<< HEAD
               <div className="bg-card border border-border p-6 md:p-8 rounded-lg shadow-sm hover:shadow-lg transition-all duration-300" data-aos="zoom-in" data-aos-delay="300">
                 <h3 className="font-serif text-xl md:text-2xl font-bold text-foreground mb-3">
                   Corporate Headquarters
                 </h3>
                 <p className="text-base md:text-lg text-muted-foreground leading-relaxed">
+=======
+              <div className="bg-card border border-border p-8 rounded-lg shadow-sm hover:shadow-lg transition-all duration-300 hover:scale-105">
+                <h3 className="font-serif text-2xl font-bold text-foreground mb-3">
+                  Corporate Headquarters
+                </h3>
+                <p className="text-muted-foreground text-lg">
+>>>>>>> a3881d06226b27b2f91d5478631afbe768f212da
                   Financial Analyst, HR Manager, Legal Advisor
                 </p>
               </div>
             </div>
 
+<<<<<<< HEAD
             <div className="mt-10 md:mt-12 max-w-5xl mx-auto">
               <p className="text-base md:text-lg lg:text-xl text-foreground text-center leading-relaxed">
                 To apply, please submit your details through our <Link 
@@ -120,6 +200,11 @@ const Careers = () => {
                 >
                   contact form
                 </Link>.
+=======
+            <div className="mt-12 max-w-5xl">
+              <p className="text-xl text-foreground text-center">
+                To apply, please submit your details through our <Link to="/contact" className="text-primary hover:underline font-semibold">contact form</Link>.
+>>>>>>> a3881d06226b27b2f91d5478631afbe768f212da
               </p>
             </div>
           </div>
