@@ -3,14 +3,11 @@ import { Toaster as Sonner } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-<<<<<<< HEAD
 import { HelmetProvider } from "react-helmet-async";
 import { useEffect } from "react";
 import AOS from "aos";
 import StructuredData from "@/components/StructuredData";
 import ScrollToTop from "@/components/ScrollToTop";
-=======
->>>>>>> a3881d06226b27b2f91d5478631afbe768f212da
 import Index from "./pages/Index";
 import About from "./pages/About";
 import Divisions from "./pages/Divisions";
@@ -23,7 +20,6 @@ import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
 
-<<<<<<< HEAD
 const App = () => {
   useEffect(() => {
     AOS.init({
@@ -63,29 +59,5 @@ const App = () => {
     </HelmetProvider>
   );
 };
-=======
-const App = () => (
-  <QueryClientProvider client={queryClient}>
-    <TooltipProvider>
-      <Toaster />
-      <Sonner />
-      <BrowserRouter>
-        <Routes>
-          <Route path="/" element={<Index />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/divisions" element={<Divisions />} />
-          <Route path="/leadership" element={<Leadership />} />
-          <Route path="/careers" element={<Careers />} />
-          <Route path="/investor-relations" element={<InvestorRelations />} />
-          <Route path="/timeline" element={<Timeline />} />
-          <Route path="/contact" element={<Contact />} />
-          {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
-          <Route path="*" element={<NotFound />} />
-        </Routes>
-      </BrowserRouter>
-    </TooltipProvider>
-  </QueryClientProvider>
-);
->>>>>>> a3881d06226b27b2f91d5478631afbe768f212da
 
 export default App;

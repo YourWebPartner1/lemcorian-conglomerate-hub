@@ -1,32 +1,21 @@
 import { defineConfig } from "vite";
 import react from "@vitejs/plugin-react-swc";
 import path from "path";
-<<<<<<< HEAD
-
-// https://vitejs.dev/config/
-export default defineConfig({
-  base: "/lemcorian-conglomerate-hub/",
-=======
 import { componentTagger } from "lovable-tagger";
 
 // https://vitejs.dev/config/
 export default defineConfig(({ mode }) => ({
->>>>>>> a3881d06226b27b2f91d5478631afbe768f212da
+  base: "/lemcorian-conglomerate-hub/",
   server: {
     host: "::",
     port: 8080,
   },
-<<<<<<< HEAD
-  plugins: [react()],
-=======
   plugins: [react(), mode === "development" && componentTagger()].filter(Boolean),
->>>>>>> a3881d06226b27b2f91d5478631afbe768f212da
   resolve: {
     alias: {
       "@": path.resolve(__dirname, "./src"),
     },
   },
-<<<<<<< HEAD
   build: {
     // Enable minification (default: true)
     minify: "terser",
@@ -54,7 +43,4 @@ export default defineConfig(({ mode }) => ({
   optimizeDeps: {
     include: ["react", "react-dom", "react-router-dom"],
   },
-});
-=======
 }));
->>>>>>> a3881d06226b27b2f91d5478631afbe768f212da
