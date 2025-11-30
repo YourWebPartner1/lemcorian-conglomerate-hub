@@ -1,5 +1,7 @@
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
+import aboutBackground from "@/assets/about-background.jpg";
+import { Shield, Users, Target, Leaf } from "lucide-react";
 
 const About = () => {
   return (
@@ -19,93 +21,161 @@ const About = () => {
         </div>
       </section>
 
-      <main className="py-20 md:py-28">
-        <div className="container mx-auto px-4 max-w-5xl">
-          {/* Who We Are Section */}
-          <section className="mb-24">
-            <h2 className="font-serif text-3xl md:text-5xl font-bold text-foreground mb-8">
+      <main className="py-20 md:py-28 relative">
+        <div 
+          className="absolute inset-0 opacity-5"
+          style={{ backgroundImage: `url(${aboutBackground})`, backgroundSize: 'cover', backgroundPosition: 'center' }}
+        ></div>
+        
+        <div className="container mx-auto px-4 max-w-6xl relative z-10">
+          {/* Who We Are */}
+          <section className="mb-28">
+            <h2 className="font-serif text-3xl md:text-5xl font-bold text-foreground mb-6">
               Who We Are
             </h2>
-            <div className="space-y-6 text-lg md:text-xl text-foreground/80 leading-relaxed">
+            <div className="w-32 h-1 bg-primary mb-10"></div>
+            <div className="space-y-8 text-lg md:text-xl text-muted-foreground leading-relaxed">
               <p>
-                Lemcorian operates as a global conglomerate with three major verticals — Agricultural Products, Chemicals, and Medical Equipment & Instruments. Our organization is built on diversification, operational strength, and a commitment to delivering essential products across key sectors.
+                Lemcorian is a multidivision conglomerate with operations spanning across agriculture, chemicals, 
+                and medical equipment sectors. Our structure enables us to leverage expertise and resources across 
+                diverse industries while maintaining specialized focus in each division.
               </p>
               <p>
-                We emphasize clarity, structure, and strategic expansion across all branches. Each division operates with specialized expertise while benefiting from the integrated strength of our conglomerate structure.
+                Through strategic positioning and operational excellence, we serve global markets with a commitment 
+                to quality, reliability, and sustainable growth. Our divisions operate independently yet benefit from 
+                shared corporate resources and governance.
               </p>
             </div>
           </section>
 
-          {/* Divider */}
-          <div className="border-t-2 border-border mb-24"></div>
+          {/* Our Values */}
+          <section className="mb-28">
+            <h2 className="font-serif text-3xl md:text-5xl font-bold text-foreground mb-6">
+              Our Values
+            </h2>
+            <div className="w-32 h-1 bg-primary mb-10"></div>
+            
+            <div className="grid md:grid-cols-2 gap-8">
+              <div className="p-8 bg-card border border-border rounded-lg shadow-sm hover:shadow-lg transition-all duration-300 hover:scale-105">
+                <Shield className="h-10 w-10 text-primary mb-4" />
+                <h3 className="font-serif text-2xl font-bold text-foreground mb-4">Integrity</h3>
+                <p className="text-lg text-muted-foreground leading-relaxed">
+                  Conducting business with transparency, ethical standards, and unwavering commitment to our stakeholders.
+                </p>
+              </div>
 
-          {/* Our Divisions Section */}
-          <section className="mb-24">
-            <h2 className="font-serif text-3xl md:text-5xl font-bold text-foreground mb-12">
+              <div className="p-8 bg-card border border-border rounded-lg shadow-sm hover:shadow-lg transition-all duration-300 hover:scale-105">
+                <Users className="h-10 w-10 text-primary mb-4" />
+                <h3 className="font-serif text-2xl font-bold text-foreground mb-4">Structure</h3>
+                <p className="text-lg text-muted-foreground leading-relaxed">
+                  Maintaining clear organizational frameworks that enable efficient operations and strategic decision-making.
+                </p>
+              </div>
+
+              <div className="p-8 bg-card border border-border rounded-lg shadow-sm hover:shadow-lg transition-all duration-300 hover:scale-105">
+                <Target className="h-10 w-10 text-primary mb-4" />
+                <h3 className="font-serif text-2xl font-bold text-foreground mb-4">Reliability</h3>
+                <p className="text-lg text-muted-foreground leading-relaxed">
+                  Delivering consistent quality and maintaining long-term relationships built on trust and performance.
+                </p>
+              </div>
+
+              <div className="p-8 bg-card border border-border rounded-lg shadow-sm hover:shadow-lg transition-all duration-300 hover:scale-105">
+                <Leaf className="h-10 w-10 text-primary mb-4" />
+                <h3 className="font-serif text-2xl font-bold text-foreground mb-4">Growth</h3>
+                <p className="text-lg text-muted-foreground leading-relaxed">
+                  Pursuing sustainable expansion while maintaining operational excellence across all divisions.
+                </p>
+              </div>
+            </div>
+          </section>
+
+          {/* Our Divisions */}
+          <section className="mb-28">
+            <h2 className="font-serif text-3xl md:text-5xl font-bold text-foreground mb-6">
               Our Divisions
             </h2>
-            
-            <div className="space-y-12">
-              <div className="border-l-4 border-primary pl-8 py-4">
-                <h3 className="font-serif text-2xl md:text-3xl font-bold text-foreground mb-4">
-                  Agricultural Products Division
+            <div className="w-32 h-1 bg-primary mb-10"></div>
+            <div className="space-y-8">
+              <div className="border-l-4 border-primary pl-8 py-4 bg-card/50 rounded-r-lg">
+                <h3 className="font-serif text-2xl font-bold text-foreground mb-3">
+                  Agricultural Products
                 </h3>
-                <div className="space-y-4 text-lg text-muted-foreground leading-relaxed">
-                  <p>
-                    Our Agricultural Products Division focuses on cultivating and distributing high-quality agricultural commodities. We specialize in premium coffee production, sourcing beans from the finest growing regions, and fresh vegetables that meet international quality standards.
-                  </p>
-                  <p>
-                    This division plays a crucial role in global food supply chains, ensuring consistent quality and sustainable farming practices. We work directly with farmers and distributors to maintain the highest standards from field to market.
-                  </p>
-                </div>
+                <p className="text-lg text-muted-foreground leading-relaxed">
+                  Global sourcing and distribution of agricultural commodities including coffee and vegetables, 
+                  serving international markets with quality products and reliable supply chains.
+                </p>
               </div>
 
-              <div className="border-l-4 border-primary pl-8 py-4">
-                <h3 className="font-serif text-2xl md:text-3xl font-bold text-foreground mb-4">
-                  Chemicals Division
+              <div className="border-l-4 border-primary pl-8 py-4 bg-card/50 rounded-r-lg">
+                <h3 className="font-serif text-2xl font-bold text-foreground mb-3">
+                  Chemicals
                 </h3>
-                <div className="space-y-4 text-lg text-muted-foreground leading-relaxed">
-                  <p>
-                    The Chemicals Division serves two critical market segments: Industrial and Pharmaceutical. Our industrial chemicals support manufacturing processes across various industries, while our pharmaceutical-grade chemicals meet stringent regulatory requirements for medical applications.
-                  </p>
-                  <p>
-                    We maintain state-of-the-art production facilities and adhere to international safety and quality standards. Our research and development team continuously works to develop innovative chemical solutions that address emerging market needs.
-                  </p>
-                </div>
+                <p className="text-lg text-muted-foreground leading-relaxed">
+                  Manufacturing and supplying industrial and pharmaceutical chemicals that meet stringent quality 
+                  standards and regulatory requirements across multiple sectors.
+                </p>
               </div>
 
-              <div className="border-l-4 border-primary pl-8 py-4">
-                <h3 className="font-serif text-2xl md:text-3xl font-bold text-foreground mb-4">
-                  Medical Equipment & Instruments Division
+              <div className="border-l-4 border-primary pl-8 py-4 bg-card/50 rounded-r-lg">
+                <h3 className="font-serif text-2xl font-bold text-foreground mb-3">
+                  Medical Equipment & Instruments
                 </h3>
-                <div className="space-y-4 text-lg text-muted-foreground leading-relaxed">
-                  <p>
-                    Our Medical Equipment & Instruments Division provides essential healthcare products including syringes, medical gloves, surgical masks, and a comprehensive range of medical instruments. These products serve hospitals, clinics, and healthcare facilities worldwide.
-                  </p>
-                  <p>
-                    Quality and safety are paramount in this division. All products undergo rigorous testing and comply with international medical device regulations. We are committed to supporting healthcare professionals with reliable, high-quality equipment.
-                  </p>
-                </div>
+                <p className="text-lg text-muted-foreground leading-relaxed">
+                  Comprehensive range of medical supplies including syringes, gloves, masks, and surgical instruments, 
+                  serving healthcare systems worldwide with ISO-certified products.
+                </p>
               </div>
             </div>
           </section>
 
-          {/* Divider */}
-          <div className="border-t-2 border-border mb-24"></div>
+          {/* Sustainability & Responsibility */}
+          <section className="mb-28">
+            <h2 className="font-serif text-3xl md:text-5xl font-bold text-foreground mb-6">
+              Sustainability & Responsibility
+            </h2>
+            <div className="w-32 h-1 bg-primary mb-10"></div>
+            <div className="bg-muted/30 border border-border rounded-lg p-10">
+              <p className="text-lg md:text-xl text-foreground leading-relaxed mb-6">
+                Our commitment to corporate responsibility extends beyond financial performance. We prioritize:
+              </p>
+              <ul className="space-y-4 text-lg text-muted-foreground">
+                <li className="flex items-start gap-3">
+                  <span className="text-primary mt-1 font-bold">•</span>
+                  <span>Environmental stewardship through sustainable operational practices across all divisions</span>
+                </li>
+                <li className="flex items-start gap-3">
+                  <span className="text-primary mt-1 font-bold">•</span>
+                  <span>Ethical sourcing and supply chain transparency in all business relationships</span>
+                </li>
+                <li className="flex items-start gap-3">
+                  <span className="text-primary mt-1 font-bold">•</span>
+                  <span>Compliance with international standards and regulatory frameworks</span>
+                </li>
+                <li className="flex items-start gap-3">
+                  <span className="text-primary mt-1 font-bold">•</span>
+                  <span>Continuous improvement in resource efficiency and waste reduction</span>
+                </li>
+                <li className="flex items-start gap-3">
+                  <span className="text-primary mt-1 font-bold">•</span>
+                  <span>Investment in communities where we operate through responsible business practices</span>
+                </li>
+              </ul>
+            </div>
+          </section>
 
-          {/* Our Commitment Section */}
+          {/* Our Commitment */}
           <section>
-            <h2 className="font-serif text-3xl md:text-5xl font-bold text-foreground mb-8">
+            <h2 className="font-serif text-3xl md:text-5xl font-bold text-foreground mb-6">
               Our Commitment
             </h2>
-            <div className="space-y-6 text-lg md:text-xl text-foreground/80 leading-relaxed">
-              <p>
-                LEMCORIAN is dedicated to operational excellence, ethical business practices, and sustainable growth. We invest in our people, technology, and infrastructure to ensure we remain at the forefront of our industries.
-              </p>
-              <p>
-                Our global presence allows us to serve diverse markets while maintaining the agility to respond to local needs. As we continue to expand our operations and capabilities, we remain focused on creating value for our stakeholders and contributing positively to the communities where we operate.
-              </p>
-            </div>
+            <div className="w-32 h-1 bg-primary mb-10"></div>
+            <p className="text-lg md:text-xl text-muted-foreground leading-relaxed">
+              Lemcorian remains committed to operational excellence, strategic growth, and maintaining the highest 
+              standards across all business operations. We continue to invest in our divisions, strengthen our market 
+              positions, and deliver value to all stakeholders while upholding our core values of integrity, structure, 
+              reliability, and sustainable growth.
+            </p>
           </section>
         </div>
       </main>

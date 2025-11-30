@@ -1,14 +1,18 @@
 import { Link } from "react-router-dom";
+import footerBackground from "@/assets/footer-background.jpg";
 
 const Footer = () => {
   return (
-    <footer className="relative bg-primary text-primary-foreground py-12 overflow-hidden">
-      <div className="absolute inset-0 opacity-5 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPjxkZWZzPjxwYXR0ZXJuIGlkPSJwYXR0ZXJuIiB4PSIwIiB5PSIwIiB3aWR0aD0iNDAiIGhlaWdodD0iNDAiIHBhdHRlcm5Vbml0cz0idXNlclNwYWNlT25Vc2UiPjxwYXRoIGQ9Ik0gMCAyMCBMIDQwIDIwIE0gMjAgMCBMIDIwIDQwIiBzdHJva2U9IiNmZmYiIHN0cm9rZS13aWR0aD0iMC41IiBmaWxsPSJub25lIi8+PC9wYXR0ZXJuPjwvZGVmcz48cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSJ1cmwoI3BhdHRlcm4pIi8+PC9zdmc+')]"></div>
-      <div className="container mx-auto px-4 relative z-10">
+    <footer 
+      className="relative border-t-2 border-primary/20 mt-20 bg-cover bg-center"
+      style={{ backgroundImage: `url(${footerBackground})` }}
+    >
+      <div className="absolute inset-0 bg-primary/95"></div>
+      <div className="container mx-auto px-4 py-16 relative z-10">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-8">
           {/* Company Overview */}
           <div>
-            <h3 className="font-serif text-lg font-bold mb-4">COMPANY OVERVIEW</h3>
+            <h3 className="font-serif text-lg font-bold mb-4 text-primary-foreground">COMPANY OVERVIEW</h3>
             <p className="text-sm text-primary-foreground/80 leading-relaxed">
               Lemcorian is a diversified multidivision conglomerate with operations across Agricultural Products, Chemicals, and Medical Equipment & Instruments. We prioritize clarity, structure, and value across all our business sectors.
             </p>
@@ -16,7 +20,7 @@ const Footer = () => {
 
           {/* Quick Links */}
           <div>
-            <h4 className="font-serif text-lg font-bold mb-4">QUICK LINKS</h4>
+            <h4 className="font-serif text-lg font-bold mb-4 text-primary-foreground">QUICK LINKS</h4>
             <ul className="space-y-2 text-sm">
               <li>
                 <Link to="/" className="text-primary-foreground/80 hover:text-primary-foreground transition-colors">
@@ -43,7 +47,7 @@ const Footer = () => {
 
           {/* Our Divisions */}
           <div>
-            <h4 className="font-serif text-lg font-bold mb-4">OUR DIVISIONS</h4>
+            <h4 className="font-serif text-lg font-bold mb-4 text-primary-foreground">OUR DIVISIONS</h4>
             <ul className="space-y-3 text-sm text-primary-foreground/80">
               <li>
                 <div className="font-semibold text-primary-foreground">Agricultural Products</div>
@@ -62,7 +66,7 @@ const Footer = () => {
 
           {/* Corporate Office */}
           <div>
-            <h4 className="font-serif text-lg font-bold mb-4">CORPORATE OFFICE</h4>
+            <h4 className="font-serif text-lg font-bold mb-4 text-primary-foreground">CORPORATE OFFICE</h4>
             <div className="space-y-2 text-sm text-primary-foreground/80">
               <p className="font-semibold text-primary-foreground">Lemcorian Headquarters</p>
               <p>Email: contact@lemcorian.com</p>
