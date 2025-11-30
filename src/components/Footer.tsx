@@ -5,7 +5,7 @@ const Footer = () => {
     <footer 
       className="relative border-t border-[#1b2942] mt-0 bg-cover bg-center"
       style={{ 
-        backgroundImage: `linear-gradient(to bottom, rgba(10, 26, 63, 0.92), rgba(10, 26, 63, 0.88)), url(${import.meta.env.BASE_URL}global-reach.jpg)` 
+        backgroundImage: `linear-gradient(to bottom, rgba(10, 26, 63, 0.92), rgba(10, 26, 63, 0.88)), url(${import.meta.env.BASE_URL}/global-reach.jpg)` 
       }}
     >
       {/* Subtle Grid Pattern Overlay */}

@@ -7,19 +7,19 @@ const Divisions = () => {
     {
       title: "Agricultural Products",
       description: "Global sourcing and distribution of premium coffee varieties and fresh vegetables, serving international markets with quality products and reliable supply chains.",
-      image: `${import.meta.env.BASE_URL}agricultural-products.jpg`,
+      image: `${import.meta.env.BASE_URL}/agricultural-products.jpg`,
       alt: "Coffee beans, vegetables, and farmlands from Lemcorian Agricultural Products division",
     },
     {
       title: "Chemicals",
       description: "Manufacturing and supplying industrial and pharmaceutical chemicals that meet stringent quality standards and regulatory requirements across multiple sectors.",
-      image: `${import.meta.env.BASE_URL}chemicals.jpg`,
+      image: `${import.meta.env.BASE_URL}/chemicals.jpg`,
       alt: "Laboratory and industrial chemical equipment from Lemcorian Chemicals division",
     },
     {
       title: "Medical Equipment & Instruments",
       description: "Comprehensive range of medical supplies including syringes, gloves, masks, and surgical instruments, serving healthcare systems worldwide with ISO-certified products.",
-      image: `${import.meta.env.BASE_URL}medical-equipment.jpg`,
+      image: `${import.meta.env.BASE_URL}/medical-equipment.jpg`,
       alt: "Medical equipment including syringes, gloves, and surgical tools from Lemcorian Medical Equipment division",
     },
   ];
@@ -30,7 +30,7 @@ const Divisions = () => {
         title="Our Divisions"
         description="Explore Lemcorian's three specialized divisions: Agricultural Products (coffee and vegetables), Chemicals (industrial and pharmaceutical), and Medical Equipment & Instruments. Learn about our diversified business operations."
         keywords="Lemcorian divisions, agricultural products, coffee, vegetables, chemicals, industrial chemicals, pharmaceutical, medical equipment, syringes, gloves, medical supplies"
-        image={`${import.meta.env.BASE_URL}agricultural-products.jpg`}
+        image={`${import.meta.env.BASE_URL}/agricultural-products.jpg`}
         url="/divisions"
       />
       <Navigation />

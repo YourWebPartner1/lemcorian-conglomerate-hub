@@ -9,7 +9,7 @@ const Timeline = () => {
         title="Corporate Timeline"
         description="Explore Lemcorian's corporate timeline from establishment to becoming a diversified multidivision conglomerate. Learn about our growth, expansion, and strategic milestones."
         keywords="Lemcorian timeline, corporate history, company milestones, business growth, corporate development, company evolution"
-        image={`${import.meta.env.BASE_URL}hero-background-premium.jpg`}
+        image={`${import.meta.env.BASE_URL}/hero-background-premium.jpg`}
         url="/timeline"
       />
       <Navigation />

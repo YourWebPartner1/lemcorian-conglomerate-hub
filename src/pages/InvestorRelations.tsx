@@ -10,7 +10,7 @@ const InvestorRelations = () => {
         title="Investor Relations"
         description="Transparent communication and sustainable value creation for Lemcorian stakeholders. Access corporate statistics, financial reports, and investor information for our diversified multidivision conglomerate."
         keywords="Lemcorian investor relations, financial reports, corporate statistics, investor information, annual reports, quarterly earnings, corporate governance, investment"
-        image={`${import.meta.env.BASE_URL}investor-background.jpg`}
+        image={`${import.meta.env.BASE_URL}/investor-background.jpg`}
         url="/investors"
       />
       <Navigation />
@@ -19,7 +19,7 @@ const InvestorRelations = () => {
         {/* Hero Section */}
         <section 
           className="pt-10 md:pt-20 lg:pt-28 pb-12 md:pb-20 bg-cover bg-center relative"
-          style={{ backgroundImage: `linear-gradient(to bottom, rgba(10, 26, 63, 0.88), rgba(10, 26, 63, 0.82)), url(${import.meta.env.BASE_URL}investor-background.jpg)` }}
+          style={{ backgroundImage: `linear-gradient(to bottom, rgba(10, 26, 63, 0.88), rgba(10, 26, 63, 0.82)), url(${import.meta.env.BASE_URL}/investor-background.jpg)` }}
         >
           <div className="absolute inset-0 bg-primary/90"></div>
           <div className="container mx-auto px-4 relative z-10" data-aos="fade-up">
