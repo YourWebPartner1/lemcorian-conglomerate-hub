@@ -43,19 +43,19 @@ const Careers = () => {
             </div>
             <div className="max-w-5xl mx-auto">
               <ul className="space-y-4 md:space-y-6 text-base md:text-lg leading-relaxed">
-                <li className="border-l-4 border-primary pl-6 md:pl-8 py-4 md:py-6 bg-card rounded-r-lg shadow-sm hover:shadow-md transition-all duration-300">
+                <li className="border-l-4 border-primary pl-6 md:pl-8 py-4 md:py-6 bg-card rounded-r-lg shadow-sm hover:shadow-md transition-all duration-200 ease-out hover:-translate-y-1 hover:scale-[1.02]" data-aos="fade-up" data-aos-duration="800">
                   Opportunities across multiple business divisions and sectors
                 </li>
-                <li className="border-l-4 border-primary pl-6 md:pl-8 py-4 md:py-6 bg-card rounded-r-lg shadow-sm hover:shadow-md transition-all duration-300">
+                <li className="border-l-4 border-primary pl-6 md:pl-8 py-4 md:py-6 bg-card rounded-r-lg shadow-sm hover:shadow-md transition-all duration-200 ease-out hover:-translate-y-1 hover:scale-[1.02]" data-aos="fade-up" data-aos-duration="800">
                   Structured career development and professional growth programs
                 </li>
-                <li className="border-l-4 border-primary pl-6 md:pl-8 py-4 md:py-6 bg-card rounded-r-lg shadow-sm hover:shadow-md transition-all duration-300">
+                <li className="border-l-4 border-primary pl-6 md:pl-8 py-4 md:py-6 bg-card rounded-r-lg shadow-sm hover:shadow-md transition-all duration-200 ease-out hover:-translate-y-1 hover:scale-[1.02]" data-aos="fade-up" data-aos-duration="800">
                   Work with a globally-focused conglomerate with clear strategic direction
                 </li>
-                <li className="border-l-4 border-primary pl-6 md:pl-8 py-4 md:py-6 bg-card rounded-r-lg shadow-sm hover:shadow-md transition-all duration-300">
+                <li className="border-l-4 border-primary pl-6 md:pl-8 py-4 md:py-6 bg-card rounded-r-lg shadow-sm hover:shadow-md transition-all duration-200 ease-out hover:-translate-y-1 hover:scale-[1.02]" data-aos="fade-up" data-aos-duration="800">
                   Commitment to operational excellence and corporate integrity
                 </li>
-                <li className="border-l-4 border-primary pl-6 md:pl-8 py-4 md:py-6 bg-card rounded-r-lg shadow-sm hover:shadow-md transition-all duration-300">
+                <li className="border-l-4 border-primary pl-6 md:pl-8 py-4 md:py-6 bg-card rounded-r-lg shadow-sm hover:shadow-md transition-all duration-200 ease-out hover:-translate-y-1 hover:scale-[1.02]" data-aos="fade-up" data-aos-duration="800">
                   Competitive compensation and comprehensive benefits
                 </li>
               </ul>
@@ -73,7 +73,7 @@ const Careers = () => {
               <div className="w-32 h-1 bg-primary mx-auto mb-6 md:mb-8"></div>
             </div>
             <div className="max-w-5xl mx-auto space-y-6 md:space-y-8">
-              <div className="bg-card border border-border p-6 md:p-8 rounded-lg shadow-sm hover:shadow-lg transition-all duration-300" data-aos="zoom-in" data-aos-delay="0">
+              <div className="bg-card border border-border p-6 md:p-8 rounded-lg shadow-sm hover:shadow-lg transition-all duration-200 ease-out hover:-translate-y-2 hover:scale-[1.03]" data-aos="fade-up" data-aos-duration="800" data-aos-delay="0">
                 <h3 className="font-serif text-xl md:text-2xl font-bold text-foreground mb-3">
                   Agricultural Products Division
                 </h3>
@@ -82,7 +82,7 @@ const Careers = () => {
                 </p>
               </div>
 
-              <div className="bg-card border border-border p-6 md:p-8 rounded-lg shadow-sm hover:shadow-lg transition-all duration-300" data-aos="zoom-in" data-aos-delay="100">
+              <div className="bg-card border border-border p-6 md:p-8 rounded-lg shadow-sm hover:shadow-lg transition-all duration-200 ease-out hover:-translate-y-2 hover:scale-[1.03]" data-aos="fade-up" data-aos-duration="800" data-aos-delay="100">
                 <h3 className="font-serif text-xl md:text-2xl font-bold text-foreground mb-3">
                   Chemicals Division
                 </h3>
@@ -91,7 +91,7 @@ const Careers = () => {
                 </p>
               </div>
 
-              <div className="bg-card border border-border p-6 md:p-8 rounded-lg shadow-sm hover:shadow-lg transition-all duration-300" data-aos="zoom-in" data-aos-delay="200">
+              <div className="bg-card border border-border p-6 md:p-8 rounded-lg shadow-sm hover:shadow-lg transition-all duration-200 ease-out hover:-translate-y-2 hover:scale-[1.03]" data-aos="fade-up" data-aos-duration="800" data-aos-delay="200">
                 <h3 className="font-serif text-xl md:text-2xl font-bold text-foreground mb-3">
                   Medical Equipment & Instruments Division
                 </h3>
@@ -100,7 +100,7 @@ const Careers = () => {
                 </p>
               </div>
 
-              <div className="bg-card border border-border p-6 md:p-8 rounded-lg shadow-sm hover:shadow-lg transition-all duration-300" data-aos="zoom-in" data-aos-delay="300">
+              <div className="bg-card border border-border p-6 md:p-8 rounded-lg shadow-sm hover:shadow-lg transition-all duration-200 ease-out hover:-translate-y-2 hover:scale-[1.03]" data-aos="fade-up" data-aos-duration="800" data-aos-delay="300">
                 <h3 className="font-serif text-xl md:text-2xl font-bold text-foreground mb-3">
                   Corporate Headquarters
                 </h3>

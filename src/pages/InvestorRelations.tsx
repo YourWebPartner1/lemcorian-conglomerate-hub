@@ -43,21 +43,21 @@ const InvestorRelations = () => {
             </div>
 
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-10">
-              <div className="text-center p-6 md:p-10 bg-card border border-border rounded-lg shadow-md hover:shadow-xl transition-all duration-300 hover:scale-105" data-aos="zoom-in" data-aos-delay="0">
+              <div className="text-center p-6 md:p-10 bg-card border border-border rounded-lg shadow-md hover:shadow-xl transition-all duration-200 ease-out hover:-translate-y-2 hover:scale-[1.03]" data-aos="fade-up" data-aos-duration="800" data-aos-delay="0">
                 <Globe2 className="h-10 w-10 md:h-14 md:w-14 text-primary mx-auto mb-4" />
                 <div className="text-3xl md:text-4xl lg:text-5xl font-bold text-foreground mb-3">25+</div>
                 <p className="text-lg md:text-xl text-muted-foreground">Countries</p>
                 <p className="text-xs md:text-sm text-muted-foreground/80 mt-2">Active global operations</p>
               </div>
 
-              <div className="text-center p-6 md:p-10 bg-card border border-border rounded-lg shadow-md hover:shadow-xl transition-all duration-300 hover:scale-105" data-aos="zoom-in" data-aos-delay="100">
+              <div className="text-center p-6 md:p-10 bg-card border border-border rounded-lg shadow-md hover:shadow-xl transition-all duration-200 ease-out hover:-translate-y-2 hover:scale-[1.03]" data-aos="fade-up" data-aos-duration="800" data-aos-delay="100">
                 <TrendingUp className="h-10 w-10 md:h-14 md:w-14 text-primary mx-auto mb-4" />
                 <div className="text-3xl md:text-4xl lg:text-5xl font-bold text-foreground mb-3">3</div>
                 <p className="text-lg md:text-xl text-muted-foreground">Major Divisions</p>
                 <p className="text-xs md:text-sm text-muted-foreground/80 mt-2">Diversified portfolio</p>
               </div>
 
-              <div className="text-center p-6 md:p-10 bg-card border border-border rounded-lg shadow-md hover:shadow-xl transition-all duration-300 hover:scale-105" data-aos="zoom-in" data-aos-delay="200">
+              <div className="text-center p-6 md:p-10 bg-card border border-border rounded-lg shadow-md hover:shadow-xl transition-all duration-200 ease-out hover:-translate-y-2 hover:scale-[1.03]" data-aos="fade-up" data-aos-duration="800" data-aos-delay="200">
                 <DollarSign className="h-10 w-10 md:h-14 md:w-14 text-primary mx-auto mb-4" />
                 <div className="text-3xl md:text-4xl lg:text-5xl font-bold text-foreground mb-3">Multi</div>
                 <p className="text-lg md:text-xl text-muted-foreground">Market Sectors</p>
@@ -83,23 +83,23 @@ const InvestorRelations = () => {
             </div>
             <div className="max-w-5xl mx-auto">
               <ul className="space-y-4 md:space-y-6 text-base md:text-lg leading-relaxed">
-                <li className="border-l-4 border-primary pl-6 md:pl-8 py-4 md:py-6 bg-card rounded-r-lg shadow-sm">
+                <li className="border-l-4 border-primary pl-6 md:pl-8 py-4 md:py-6 bg-card rounded-r-lg shadow-sm hover:shadow-md transition-all duration-200 ease-out hover:-translate-y-1 hover:scale-[1.02]" data-aos="fade-up" data-aos-duration="800">
                   <span className="font-semibold text-foreground text-lg md:text-xl block mb-2">Diversification</span>
                   <span className="text-muted-foreground">Operations across agricultural, chemical, and medical sectors reduce risk and enhance stability.</span>
                 </li>
-                <li className="border-l-4 border-primary pl-6 md:pl-8 py-4 md:py-6 bg-card rounded-r-lg shadow-sm">
+                <li className="border-l-4 border-primary pl-6 md:pl-8 py-4 md:py-6 bg-card rounded-r-lg shadow-sm hover:shadow-md transition-all duration-200 ease-out hover:-translate-y-1 hover:scale-[1.02]" data-aos="fade-up" data-aos-duration="800">
                   <span className="font-semibold text-foreground text-lg md:text-xl block mb-2">Operational Excellence</span>
                   <span className="text-muted-foreground">Structured management and clear accountability across all divisions.</span>
                 </li>
-                <li className="border-l-4 border-primary pl-6 md:pl-8 py-4 md:py-6 bg-card rounded-r-lg shadow-sm">
+                <li className="border-l-4 border-primary pl-6 md:pl-8 py-4 md:py-6 bg-card rounded-r-lg shadow-sm hover:shadow-md transition-all duration-200 ease-out hover:-translate-y-1 hover:scale-[1.02]" data-aos="fade-up" data-aos-duration="800">
                   <span className="font-semibold text-foreground text-lg md:text-xl block mb-2">Strategic Growth</span>
                   <span className="text-muted-foreground">Focused expansion aligned with market demands and long-term objectives.</span>
                 </li>
-                <li className="border-l-4 border-primary pl-6 md:pl-8 py-4 md:py-6 bg-card rounded-r-lg shadow-sm">
+                <li className="border-l-4 border-primary pl-6 md:pl-8 py-4 md:py-6 bg-card rounded-r-lg shadow-sm hover:shadow-md transition-all duration-200 ease-out hover:-translate-y-1 hover:scale-[1.02]" data-aos="fade-up" data-aos-duration="800">
                   <span className="font-semibold text-foreground text-lg md:text-xl block mb-2">Transparency</span>
                   <span className="text-muted-foreground">Regular financial disclosures and adherence to corporate governance standards.</span>
                 </li>
-                <li className="border-l-4 border-primary pl-6 md:pl-8 py-4 md:py-6 bg-card rounded-r-lg shadow-sm">
+                <li className="border-l-4 border-primary pl-6 md:pl-8 py-4 md:py-6 bg-card rounded-r-lg shadow-sm hover:shadow-md transition-all duration-200 ease-out hover:-translate-y-1 hover:scale-[1.02]" data-aos="fade-up" data-aos-duration="800">
                   <span className="font-semibold text-foreground text-lg md:text-xl block mb-2">Compliance</span>
                   <span className="text-muted-foreground">Strict regulatory compliance and commitment to ethical business practices.</span>
                 </li>

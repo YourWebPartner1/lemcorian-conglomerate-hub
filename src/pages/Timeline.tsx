@@ -37,11 +37,11 @@ const Timeline = () => {
                 
                 <div className="space-y-8 md:space-y-12 lg:space-y-16">
                   {/* 2025 */}
-                  <div className="relative pl-0 sm:pl-16 md:pl-32" data-aos="fade-up" data-aos-delay="0">
+                  <div className="relative pl-0 sm:pl-16 md:pl-32" data-aos="fade-up" data-aos-duration="800" data-aos-delay="0">
                     <div className="absolute left-0 sm:left-[7px] md:left-[37px] w-8 h-8 md:w-12 md:h-12 bg-primary rounded-full flex items-center justify-center shadow-lg hidden sm:flex">
                       <div className="w-2 h-2 md:w-3 md:h-3 bg-primary-foreground rounded-full"></div>
                     </div>
-                    <div className="bg-card border-2 border-primary/30 rounded-lg p-6 md:p-8 shadow-sm hover:shadow-lg transition-all duration-300">
+                    <div className="bg-card border-2 border-primary/30 rounded-lg p-6 md:p-8 shadow-sm hover:shadow-lg transition-all duration-200 ease-out hover:-translate-y-1 hover:scale-[1.02]">
                       <div className="font-serif text-2xl md:text-3xl lg:text-4xl font-bold text-primary mb-3 md:mb-4">2025</div>
                       <h3 className="text-xl md:text-2xl font-bold text-foreground mb-3 md:mb-4">
                         Company Established as a Conglomerate
@@ -53,11 +53,11 @@ const Timeline = () => {
                   </div>
 
                   {/* 2026 */}
-                  <div className="relative pl-0 sm:pl-16 md:pl-32" data-aos="fade-up" data-aos-delay="100">
+                  <div className="relative pl-0 sm:pl-16 md:pl-32" data-aos="fade-up" data-aos-duration="800" data-aos-delay="100">
                     <div className="absolute left-0 sm:left-[7px] md:left-[37px] w-8 h-8 md:w-12 md:h-12 bg-primary rounded-full flex items-center justify-center shadow-lg hidden sm:flex">
                       <div className="w-2 h-2 md:w-3 md:h-3 bg-primary-foreground rounded-full"></div>
                     </div>
-                    <div className="bg-card border-2 border-primary/30 rounded-lg p-6 md:p-8 shadow-sm hover:shadow-lg transition-all duration-300">
+                    <div className="bg-card border-2 border-primary/30 rounded-lg p-6 md:p-8 shadow-sm hover:shadow-lg transition-all duration-200 ease-out hover:-translate-y-1 hover:scale-[1.02]">
                       <div className="font-serif text-2xl md:text-3xl lg:text-4xl font-bold text-primary mb-3 md:mb-4">2026</div>
                       <h3 className="text-xl md:text-2xl font-bold text-foreground mb-3 md:mb-4">
                         Expansion into Agricultural Products
@@ -69,11 +69,11 @@ const Timeline = () => {
                   </div>
 
                   {/* 2027 */}
-                  <div className="relative pl-0 sm:pl-16 md:pl-32" data-aos="fade-up" data-aos-delay="200">
+                  <div className="relative pl-0 sm:pl-16 md:pl-32" data-aos="fade-up" data-aos-duration="800" data-aos-delay="200">
                     <div className="absolute left-0 sm:left-[7px] md:left-[37px] w-8 h-8 md:w-12 md:h-12 bg-primary rounded-full flex items-center justify-center shadow-lg hidden sm:flex">
                       <div className="w-2 h-2 md:w-3 md:h-3 bg-primary-foreground rounded-full"></div>
                     </div>
-                    <div className="bg-card border-2 border-primary/30 rounded-lg p-6 md:p-8 shadow-sm hover:shadow-lg transition-all duration-300">
+                    <div className="bg-card border-2 border-primary/30 rounded-lg p-6 md:p-8 shadow-sm hover:shadow-lg transition-all duration-200 ease-out hover:-translate-y-1 hover:scale-[1.02]">
                       <div className="font-serif text-2xl md:text-3xl lg:text-4xl font-bold text-primary mb-3 md:mb-4">2027</div>
                       <h3 className="text-xl md:text-2xl font-bold text-foreground mb-3 md:mb-4">
                         Launch of Chemical Division
@@ -85,11 +85,11 @@ const Timeline = () => {
                   </div>
 
                   {/* 2028 */}
-                  <div className="relative pl-0 sm:pl-16 md:pl-32" data-aos="fade-up" data-aos-delay="300">
+                  <div className="relative pl-0 sm:pl-16 md:pl-32" data-aos="fade-up" data-aos-duration="800" data-aos-delay="300">
                     <div className="absolute left-0 sm:left-[7px] md:left-[37px] w-8 h-8 md:w-12 md:h-12 bg-primary rounded-full flex items-center justify-center shadow-lg hidden sm:flex">
                       <div className="w-2 h-2 md:w-3 md:h-3 bg-primary-foreground rounded-full"></div>
                     </div>
-                    <div className="bg-card border-2 border-primary/30 rounded-lg p-6 md:p-8 shadow-sm hover:shadow-lg transition-all duration-300">
+                    <div className="bg-card border-2 border-primary/30 rounded-lg p-6 md:p-8 shadow-sm hover:shadow-lg transition-all duration-200 ease-out hover:-translate-y-1 hover:scale-[1.02]">
                       <div className="font-serif text-2xl md:text-3xl lg:text-4xl font-bold text-primary mb-3 md:mb-4">2028</div>
                       <h3 className="text-xl md:text-2xl font-bold text-foreground mb-3 md:mb-4">
                         Introduction of Medical Equipment & Instruments
@@ -101,11 +101,11 @@ const Timeline = () => {
                   </div>
 
                   {/* 2029 */}
-                  <div className="relative pl-0 sm:pl-16 md:pl-32" data-aos="fade-up" data-aos-delay="400">
+                  <div className="relative pl-0 sm:pl-16 md:pl-32" data-aos="fade-up" data-aos-duration="800" data-aos-delay="400">
                     <div className="absolute left-0 sm:left-[7px] md:left-[37px] w-8 h-8 md:w-12 md:h-12 bg-primary rounded-full flex items-center justify-center shadow-lg hidden sm:flex">
                       <div className="w-2 h-2 md:w-3 md:h-3 bg-primary-foreground rounded-full"></div>
                     </div>
-                    <div className="bg-card border-2 border-primary/30 rounded-lg p-6 md:p-8 shadow-sm hover:shadow-lg transition-all duration-300">
+                    <div className="bg-card border-2 border-primary/30 rounded-lg p-6 md:p-8 shadow-sm hover:shadow-lg transition-all duration-200 ease-out hover:-translate-y-1 hover:scale-[1.02]">
                       <div className="font-serif text-2xl md:text-3xl lg:text-4xl font-bold text-primary mb-3 md:mb-4">2029</div>
                       <h3 className="text-xl md:text-2xl font-bold text-foreground mb-3 md:mb-4">
                         Consolidation of Operations

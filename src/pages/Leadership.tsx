@@ -1,6 +1,7 @@
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import SEO from "@/components/SEO";
+import { motion } from "framer-motion";
 
 const Leadership = () => {
   const executiveLeadership = [
@@ -87,18 +88,25 @@ const Leadership = () => {
             
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8 lg:gap-12">
               {executiveLeadership.map((leader, index) => (
-                <div
+                <motion.div
                   key={index}
-                  className="bg-card border border-border rounded-lg overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 hover:-translate-y-[3px] flex flex-col min-h-[400px] md:min-h-[500px]"
+                  className="bg-card border border-border rounded-xl overflow-hidden shadow-corporate card-hover flex flex-col min-h-[400px] md:min-h-[500px] group"
                   data-aos="zoom-in"
+                  data-aos-duration="800"
                   data-aos-delay={index * 100}
+                  initial={{ opacity: 0, y: 30 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true }}
+                  transition={{ delay: index * 0.1, duration: 0.6 }}
+                  whileHover={{ y: -8, scale: 1.02 }}
                 >
-                  {/* Silhouette Image */}
-                  <div className="w-full h-[220px] md:h-[280px] bg-muted/10 flex items-center justify-center overflow-hidden">
+                  {/* Silhouette Image with Premium Overlay */}
+                  <div className="w-full h-[220px] md:h-[280px] bg-gradient-to-br from-muted/20 to-muted/5 flex items-center justify-center overflow-hidden relative">
+                    <div className="absolute inset-0 bg-gradient-to-t from-primary/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
                     <img
                       src={leader.image}
                       alt={leader.alt}
-                      className="w-full h-full object-contain p-4 max-w-full"
+                      className="w-full h-full object-contain p-4 max-w-full transition-transform duration-300 group-hover:scale-105"
                       loading="lazy"
                       fetchPriority={index === 0 ? "high" : "low"}
                       decoding="async"
@@ -108,14 +116,14 @@ const Leadership = () => {
 
                   {/* Content */}
                   <div className="p-6 md:p-8 flex-1 flex flex-col">
-                    <h3 className="font-serif text-xl md:text-2xl lg:text-3xl font-bold text-foreground mb-4 md:mb-6 leading-tight">
+                    <h3 className="font-serif text-xl md:text-2xl lg:text-3xl font-bold text-foreground mb-4 md:mb-6 leading-tight group-hover:text-primary transition-colors duration-300">
                       {leader.title}
                     </h3>
-                    <p className="text-muted-foreground text-base md:text-lg leading-relaxed flex-1">
+                    <p className="text-muted-foreground text-base md:text-lg leading-relaxed flex-1 spacing-refined">
                       {leader.description}
                     </p>
                   </div>
-                </div>
+                </motion.div>
               ))}
             </div>
           </div>
@@ -133,18 +141,25 @@ const Leadership = () => {
             
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8 lg:gap-12">
               {divisionHeads.map((leader, index) => (
-                <div
+                <motion.div
                   key={index}
-                  className="bg-card border border-border rounded-lg overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 hover:-translate-y-[3px] flex flex-col min-h-[400px] md:min-h-[500px]"
+                  className="bg-card border border-border rounded-xl overflow-hidden shadow-corporate card-hover flex flex-col min-h-[400px] md:min-h-[500px] group"
                   data-aos="zoom-in"
+                  data-aos-duration="800"
                   data-aos-delay={index * 100}
+                  initial={{ opacity: 0, y: 30 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true }}
+                  transition={{ delay: index * 0.1, duration: 0.6 }}
+                  whileHover={{ y: -8, scale: 1.02 }}
                 >
-                  {/* Silhouette Image */}
-                  <div className="w-full h-[220px] md:h-[280px] bg-muted/10 flex items-center justify-center overflow-hidden">
+                  {/* Silhouette Image with Premium Overlay */}
+                  <div className="w-full h-[220px] md:h-[280px] bg-gradient-to-br from-muted/20 to-muted/5 flex items-center justify-center overflow-hidden relative">
+                    <div className="absolute inset-0 bg-gradient-to-t from-primary/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
                     <img
                       src={leader.image}
                       alt={leader.alt}
-                      className="w-full h-full object-contain p-4 max-w-full"
+                      className="w-full h-full object-contain p-4 max-w-full transition-transform duration-300 group-hover:scale-105"
                       loading="lazy"
                       fetchPriority="low"
                       decoding="async"
@@ -154,14 +169,14 @@ const Leadership = () => {
 
                   {/* Content */}
                   <div className="p-6 md:p-8 flex-1 flex flex-col">
-                    <h3 className="font-serif text-xl md:text-2xl lg:text-3xl font-bold text-foreground mb-4 md:mb-6 leading-tight">
+                    <h3 className="font-serif text-xl md:text-2xl lg:text-3xl font-bold text-foreground mb-4 md:mb-6 leading-tight group-hover:text-primary transition-colors duration-300">
                       {leader.title}
                     </h3>
-                    <p className="text-muted-foreground text-base md:text-lg leading-relaxed flex-1">
+                    <p className="text-muted-foreground text-base md:text-lg leading-relaxed flex-1 spacing-refined">
                       {leader.description}
                     </p>
                   </div>
-                </div>
+                </motion.div>
               ))}
             </div>
           </div>

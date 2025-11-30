@@ -1,11 +1,22 @@
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import SEO from "@/components/SEO";
+import GlobalMapOverlay from "@/components/GlobalMapOverlay";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
 import { CheckCircle2, Globe2, TrendingUp, Award } from "lucide-react";
+import { motion, useScroll, useTransform } from "framer-motion";
+import { useRef } from "react";
 
 const Index = () => {
+  const heroRef = useRef<HTMLDivElement>(null);
+  const { scrollYProgress } = useScroll({
+    target: heroRef,
+    offset: ["start start", "end start"]
+  });
+  
+  const y = useTransform(scrollYProgress, [0, 1], ["0%", "30%"]);
+
   return (
     <div className="flex flex-col min-h-screen bg-background">
       <SEO
@@ -16,45 +27,96 @@ const Index = () => {
         url="/"
       />
       <Navigation />
+      <GlobalMapOverlay />
       
-      {/* Hero Section */}
+      {/* Hero Section with Parallax & Premium Effects */}
       <section 
-        className="relative min-h-screen flex items-center justify-center bg-cover bg-center bg-no-repeat pt-10 md:pt-20 lg:pt-28"
-        style={{ 
-          backgroundImage: `linear-gradient(to bottom, rgba(10, 26, 63, 0.85), rgba(10, 26, 63, 0.4)), url(/hero-background-premium.jpg)` 
-        }}
+        ref={heroRef}
+        className="relative min-h-screen flex items-center justify-center bg-cover bg-center bg-no-repeat pt-10 md:pt-20 lg:pt-28 overflow-hidden"
       >
-        <div className="container mx-auto px-4 text-center py-12 md:py-20" data-aos="fade-up">
-          <h1 className="text-2xl sm:text-3xl md:text-5xl lg:text-6xl xl:text-7xl font-bold text-white font-serif mb-4 md:mb-6 lg:mb-8 tracking-tight sm:tracking-[0.15em]">
+        {/* Parallax Background */}
+        <motion.div
+          className="absolute inset-0 bg-cover bg-center"
+          style={{
+            backgroundImage: `url(/hero-background-premium.jpg)`,
+            y,
+          }}
+        />
+        
+        {/* Animated Gradient Overlay */}
+        <motion.div
+          className="absolute inset-0 gradient-overlay"
+          initial={{ opacity: 0.85 }}
+          animate={{ opacity: [0.85, 0.9, 0.85] }}
+          transition={{ duration: 6, repeat: Infinity, ease: "easeInOut" }}
+        />
+        
+        {/* Additional Depth Layer */}
+        <div className="absolute inset-0 bg-gradient-to-b from-primary/95 via-primary/85 to-primary/60" />
+        
+        <div className="container mx-auto px-4 text-center py-12 md:py-20 relative z-10">
+          <motion.h1
+            initial={{ opacity: 0, y: 30 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, ease: "easeOut" }}
+            className="text-2xl sm:text-3xl md:text-5xl lg:text-6xl xl:text-7xl font-bold text-white font-serif mb-4 md:mb-6 lg:mb-8 tracking-tight sm:tracking-[0.15em]"
+          >
             Lemcorian – Global Multidivision Conglomerate
-          </h1>
-          <p className="text-base sm:text-lg md:text-2xl lg:text-3xl text-white/95 mb-3 md:mb-4 lg:mb-6 max-w-3xl mx-auto tracking-wide font-light px-2">
+          </motion.h1>
+          <motion.p
+            initial={{ opacity: 0, y: 30 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, delay: 0.2, ease: "easeOut" }}
+            className="text-base sm:text-lg md:text-2xl lg:text-3xl text-white/95 mb-3 md:mb-4 lg:mb-6 max-w-3xl mx-auto tracking-wide font-light px-2"
+          >
             A Global Multidivision Conglomerate
-          </p>
-          <p className="text-sm sm:text-base md:text-lg lg:text-xl text-white/80 mb-6 md:mb-8 lg:mb-12 max-w-3xl mx-auto tracking-wide px-2">
+          </motion.p>
+          <motion.p
+            initial={{ opacity: 0, y: 30 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, delay: 0.4, ease: "easeOut" }}
+            className="text-sm sm:text-base md:text-lg lg:text-xl text-white/80 mb-6 md:mb-8 lg:mb-12 max-w-3xl mx-auto tracking-wide px-2"
+          >
             Operating across Agriculture, Chemicals, and Medical Equipment & Instruments.
-          </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
+          </motion.p>
+          <motion.div
+            initial={{ opacity: 0, y: 30 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, delay: 0.6, ease: "easeOut" }}
+            className="flex flex-col sm:flex-row gap-4 justify-center items-center"
+          >
             <Link to="/divisions" className="cursor-pointer">
-              <Button 
-                size="lg" 
-                className="bg-white text-[#0A1A3F] hover:bg-white/90 font-semibold px-6 md:px-8 py-4 md:py-6 text-sm md:text-base shadow-lg cursor-pointer transition-all duration-300 rounded-md"
-                aria-label="Explore Lemcorian divisions"
+              <motion.div
+                whileHover={{ scale: 1.05, y: -2 }}
+                whileTap={{ scale: 0.95 }}
+                className="inline-block"
               >
-                Explore Our Divisions
-              </Button>
+                <Button 
+                  size="lg" 
+                  className="bg-white text-[#0A1A3F] hover:bg-white/95 font-semibold px-8 md:px-10 py-5 md:py-6 text-sm md:text-base shadow-corporate-lg cursor-pointer transition-all duration-300 rounded-lg hover:shadow-2xl hover:shadow-white/30 btn-glow"
+                  aria-label="Explore Lemcorian divisions"
+                >
+                  Explore Our Divisions
+                </Button>
+              </motion.div>
             </Link>
             <Link to="/about" className="cursor-pointer">
-              <Button 
-                size="lg" 
-                variant="outline"
-                className="bg-transparent border-2 border-white text-white hover:bg-white/10 font-semibold px-6 md:px-8 py-4 md:py-6 text-sm md:text-base cursor-pointer transition-all duration-300 rounded-md"
-                aria-label="Learn more about Lemcorian"
+              <motion.div
+                whileHover={{ scale: 1.05, y: -2 }}
+                whileTap={{ scale: 0.95 }}
+                className="inline-block"
               >
-                Learn More About Us
-              </Button>
+                <Button 
+                  size="lg" 
+                  variant="outline"
+                  className="bg-transparent border-2 border-white/90 text-white hover:bg-white/15 hover:border-white font-semibold px-8 md:px-10 py-5 md:py-6 text-sm md:text-base cursor-pointer transition-all duration-300 rounded-lg hover:shadow-xl hover:shadow-white/20 backdrop-blur-sm"
+                  aria-label="Learn more about Lemcorian"
+                >
+                  Learn More About Us
+                </Button>
+              </motion.div>
             </Link>
-          </div>
+          </motion.div>
         </div>
       </section>
 
@@ -85,7 +147,7 @@ const Index = () => {
           
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8 lg:gap-10">
             {/* Agricultural Products Card */}
-            <div className="bg-card border border-border rounded-lg shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col h-full overflow-hidden" data-aos="zoom-in">
+            <div className="bg-card border border-border rounded-lg shadow-sm hover:shadow-xl transition-all duration-200 ease-out flex flex-col h-full overflow-hidden hover:-translate-y-2 hover:scale-[1.03]" data-aos="fade-up" data-aos-duration="800" data-aos-delay="0">
               <div className="w-full h-[220px] overflow-hidden">
                 <img 
                   src="/agricultural-products.jpg" 
@@ -115,7 +177,7 @@ const Index = () => {
             </div>
 
             {/* Chemicals Card */}
-            <div className="bg-card border border-border rounded-lg shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col h-full overflow-hidden" data-aos="zoom-in" data-aos-delay="100">
+            <div className="bg-card border border-border rounded-lg shadow-sm hover:shadow-xl transition-all duration-200 ease-out flex flex-col h-full overflow-hidden hover:-translate-y-2 hover:scale-[1.03]" data-aos="fade-up" data-aos-duration="800" data-aos-delay="100">
               <div className="w-full h-[220px] overflow-hidden">
                 <img 
                   src="/chemicals.jpg" 
@@ -145,7 +207,7 @@ const Index = () => {
             </div>
 
             {/* Medical Equipment Card */}
-            <div className="bg-card border border-border rounded-lg shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col h-full overflow-hidden" data-aos="zoom-in" data-aos-delay="200">
+            <div className="bg-card border border-border rounded-lg shadow-sm hover:shadow-xl transition-all duration-200 ease-out flex flex-col h-full overflow-hidden hover:-translate-y-2 hover:scale-[1.03]" data-aos="fade-up" data-aos-duration="800" data-aos-delay="200">
               <div className="w-full h-[220px] overflow-hidden">
                 <img 
                   src="/medical-equipment.jpg" 
@@ -243,7 +305,7 @@ const Index = () => {
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8 lg:gap-10">
-            <div className="flex items-start gap-4 md:gap-6 p-6 md:p-8 rounded-lg bg-card border border-border shadow-sm hover:shadow-lg transition-all duration-300">
+            <div className="flex items-start gap-4 md:gap-6 p-6 md:p-8 rounded-lg bg-card border border-border shadow-sm hover:shadow-lg transition-all duration-200 ease-out hover:-translate-y-1 hover:scale-[1.02]">
               <CheckCircle2 className="h-6 w-6 md:h-8 md:w-8 text-primary flex-shrink-0 mt-1" />
               <div>
                 <h3 className="font-semibold text-foreground text-lg md:text-xl mb-3">Global Presence</h3>
@@ -253,7 +315,7 @@ const Index = () => {
               </div>
             </div>
 
-            <div className="flex items-start gap-4 md:gap-6 p-6 md:p-8 rounded-lg bg-card border border-border shadow-sm hover:shadow-lg transition-all duration-300">
+            <div className="flex items-start gap-4 md:gap-6 p-6 md:p-8 rounded-lg bg-card border border-border shadow-sm hover:shadow-lg transition-all duration-200 ease-out hover:-translate-y-1 hover:scale-[1.02]">
               <CheckCircle2 className="h-6 w-6 md:h-8 md:w-8 text-primary flex-shrink-0 mt-1" />
               <div>
                 <h3 className="font-semibold text-foreground text-lg md:text-xl mb-3">Quality Assurance</h3>
@@ -263,7 +325,7 @@ const Index = () => {
               </div>
             </div>
 
-            <div className="flex items-start gap-4 md:gap-6 p-6 md:p-8 rounded-lg bg-card border border-border shadow-sm hover:shadow-lg transition-all duration-300">
+            <div className="flex items-start gap-4 md:gap-6 p-6 md:p-8 rounded-lg bg-card border border-border shadow-sm hover:shadow-lg transition-all duration-200 ease-out hover:-translate-y-1 hover:scale-[1.02]">
               <CheckCircle2 className="h-6 w-6 md:h-8 md:w-8 text-primary flex-shrink-0 mt-1" />
               <div>
                 <h3 className="font-semibold text-foreground text-lg md:text-xl mb-3">Diverse Portfolio</h3>
@@ -273,7 +335,7 @@ const Index = () => {
               </div>
             </div>
 
-            <div className="flex items-start gap-4 md:gap-6 p-6 md:p-8 rounded-lg bg-card border border-border shadow-sm hover:shadow-lg transition-all duration-300">
+            <div className="flex items-start gap-4 md:gap-6 p-6 md:p-8 rounded-lg bg-card border border-border shadow-sm hover:shadow-lg transition-all duration-200 ease-out hover:-translate-y-1 hover:scale-[1.02]">
               <CheckCircle2 className="h-6 w-6 md:h-8 md:w-8 text-primary flex-shrink-0 mt-1" />
               <div>
                 <h3 className="font-semibold text-foreground text-lg md:text-xl mb-3">Sustainable Practices</h3>
@@ -283,7 +345,7 @@ const Index = () => {
               </div>
             </div>
 
-            <div className="flex items-start gap-4 md:gap-6 p-6 md:p-8 rounded-lg bg-card border border-border shadow-sm hover:shadow-lg transition-all duration-300">
+            <div className="flex items-start gap-4 md:gap-6 p-6 md:p-8 rounded-lg bg-card border border-border shadow-sm hover:shadow-lg transition-all duration-200 ease-out hover:-translate-y-1 hover:scale-[1.02]">
               <CheckCircle2 className="h-6 w-6 md:h-8 md:w-8 text-primary flex-shrink-0 mt-1" />
               <div>
                 <h3 className="font-semibold text-foreground text-lg md:text-xl mb-3">Industry Expertise</h3>
@@ -293,7 +355,7 @@ const Index = () => {
               </div>
             </div>
 
-            <div className="flex items-start gap-4 md:gap-6 p-6 md:p-8 rounded-lg bg-card border border-border shadow-sm hover:shadow-lg transition-all duration-300">
+            <div className="flex items-start gap-4 md:gap-6 p-6 md:p-8 rounded-lg bg-card border border-border shadow-sm hover:shadow-lg transition-all duration-200 ease-out hover:-translate-y-1 hover:scale-[1.02]">
               <CheckCircle2 className="h-6 w-6 md:h-8 md:w-8 text-primary flex-shrink-0 mt-1" />
               <div>
                 <h3 className="font-semibold text-foreground text-lg md:text-xl mb-3">Reliable Partnership</h3>

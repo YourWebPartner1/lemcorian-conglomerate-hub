@@ -15,6 +15,7 @@ import Leadership from "./pages/Leadership";
 import Careers from "./pages/Careers";
 import InvestorRelations from "./pages/InvestorRelations";
 import Timeline from "./pages/Timeline";
+import FlowChart from "./pages/FlowChart";
 import Contact from "./pages/Contact";
 import NotFound from "./pages/NotFound";
 
@@ -29,6 +30,16 @@ const App = () => {
       once: true,
       disable: window.innerWidth < 768 ? "phone" : false,
     });
+    
+    // Refresh AOS when window is resized
+    const handleResize = () => {
+      AOS.refresh();
+    };
+    window.addEventListener("resize", handleResize);
+    
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
   }, []);
 
   return (
@@ -49,6 +60,7 @@ const App = () => {
               <Route path="/investors" element={<InvestorRelations />} />
               <Route path="/investor-relations" element={<InvestorRelations />} />
               <Route path="/timeline" element={<Timeline />} />
+              <Route path="/flow-chart" element={<FlowChart />} />
               <Route path="/contact" element={<Contact />} />
               {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
               <Route path="*" element={<NotFound />} />

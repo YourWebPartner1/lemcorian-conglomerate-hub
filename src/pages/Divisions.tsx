@@ -65,16 +65,18 @@ const Divisions = () => {
             {divisions.map((division, index) => (
               <div
                 key={index}
-                className="bg-card border border-border rounded-lg overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col group hover:-translate-y-[3px]"
+                className="bg-card border border-border rounded-xl overflow-hidden shadow-corporate card-hover flex flex-col group"
                 data-aos="zoom-in"
+                data-aos-duration="800"
                 data-aos-delay={index * 100}
               >
                 {/* Image */}
-                <div className="w-full h-[220px] overflow-hidden">
+                <div className="w-full h-[220px] overflow-hidden relative">
+                  <div className="absolute inset-0 bg-gradient-to-t from-primary/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-10" />
                   <img
                     src={division.image}
                     alt={division.alt}
-                    className="w-full h-full object-cover rounded-t-lg group-hover:scale-105 transition-transform duration-300 max-w-full"
+                    className="w-full h-full object-cover rounded-t-xl group-hover:scale-110 transition-transform duration-500 max-w-full"
                     loading="lazy"
                     fetchPriority={index === 0 ? "high" : "low"}
                     decoding="async"

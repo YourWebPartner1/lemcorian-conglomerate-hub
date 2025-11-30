@@ -1,6 +1,8 @@
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import SEO from "@/components/SEO";
+import FlowChart from "@/components/FlowChart";
+import SVGFlowChart from "@/components/SVGFlowChart";
 import { Shield, Users, Target, Leaf } from "lucide-react";
 
 const About = () => {
@@ -35,12 +37,12 @@ const About = () => {
         
         <div className="container mx-auto px-4 md:px-6 max-w-6xl relative z-10">
           {/* Who We Are */}
-          <section className="mb-12 md:mb-16 lg:mb-20" data-aos="fade-up">
-            <h2 className="font-serif text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-bold text-foreground mb-4 md:mb-6" data-aos="fade-down">
+          <section className="mb-12 md:mb-16 lg:mb-20" data-aos="fade-right" data-aos-duration="800">
+            <h2 className="font-serif text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-bold text-foreground mb-4 md:mb-6" data-aos="fade-down" data-aos-duration="800">
               Who We Are
             </h2>
             <div className="w-32 h-1 bg-primary mb-6 md:mb-8"></div>
-            <div className="space-y-6 md:space-y-8 text-base md:text-lg lg:text-xl text-muted-foreground leading-relaxed max-w-5xl">
+            <div className="space-y-6 md:space-y-8 text-base md:text-lg lg:text-xl text-muted-foreground leading-relaxed max-w-5xl" data-aos="fade-right" data-aos-duration="800" data-aos-delay="100">
               <p>
                 Lemcorian is a multidivision conglomerate with operations spanning across agriculture, chemicals, 
                 and medical equipment sectors. Our structure enables us to leverage expertise and resources across 
@@ -55,14 +57,14 @@ const About = () => {
           </section>
 
           {/* Our Values */}
-          <section className="mb-12 md:mb-16 lg:mb-20" data-aos="fade-up">
-            <h2 className="font-serif text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-bold text-foreground mb-4 md:mb-6" data-aos="fade-down">
+          <section className="mb-12 md:mb-16 lg:mb-20" data-aos="fade-left" data-aos-duration="800">
+            <h2 className="font-serif text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-bold text-foreground mb-4 md:mb-6" data-aos="fade-down" data-aos-duration="800">
               Our Values
             </h2>
             <div className="w-32 h-1 bg-primary mb-6 md:mb-8"></div>
             
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8">
-              <div className="p-6 md:p-8 bg-card border border-border rounded-lg shadow-sm hover:shadow-lg transition-all duration-300" data-aos="zoom-in" data-aos-delay="0">
+              <div className="p-6 md:p-8 bg-card border border-border rounded-lg shadow-sm hover:shadow-lg transition-all duration-200 ease-out hover:-translate-y-2 hover:scale-[1.03]" data-aos="fade-up" data-aos-duration="800" data-aos-delay="0">
                 <Shield className="h-8 w-8 md:h-10 md:w-10 text-primary mb-4" />
                 <h3 className="font-serif text-xl md:text-2xl font-bold text-foreground mb-4">Integrity</h3>
                 <p className="text-base md:text-lg text-muted-foreground leading-relaxed">
@@ -70,7 +72,7 @@ const About = () => {
                 </p>
               </div>
 
-              <div className="p-6 md:p-8 bg-card border border-border rounded-lg shadow-sm hover:shadow-lg transition-all duration-300" data-aos="zoom-in" data-aos-delay="100">
+              <div className="p-6 md:p-8 bg-card border border-border rounded-lg shadow-sm hover:shadow-lg transition-all duration-200 ease-out hover:-translate-y-2 hover:scale-[1.03]" data-aos="fade-up" data-aos-duration="800" data-aos-delay="100">
                 <Users className="h-8 w-8 md:h-10 md:w-10 text-primary mb-4" />
                 <h3 className="font-serif text-xl md:text-2xl font-bold text-foreground mb-4">Structure</h3>
                 <p className="text-base md:text-lg text-muted-foreground leading-relaxed">
@@ -78,7 +80,7 @@ const About = () => {
                 </p>
               </div>
 
-              <div className="p-6 md:p-8 bg-card border border-border rounded-lg shadow-sm hover:shadow-lg transition-all duration-300" data-aos="zoom-in" data-aos-delay="200">
+              <div className="p-6 md:p-8 bg-card border border-border rounded-lg shadow-sm hover:shadow-lg transition-all duration-200 ease-out hover:-translate-y-2 hover:scale-[1.03]" data-aos="fade-up" data-aos-duration="800" data-aos-delay="200">
                 <Target className="h-8 w-8 md:h-10 md:w-10 text-primary mb-4" />
                 <h3 className="font-serif text-xl md:text-2xl font-bold text-foreground mb-4">Reliability</h3>
                 <p className="text-base md:text-lg text-muted-foreground leading-relaxed">
@@ -86,7 +88,7 @@ const About = () => {
                 </p>
               </div>
 
-              <div className="p-6 md:p-8 bg-card border border-border rounded-lg shadow-sm hover:shadow-lg transition-all duration-300" data-aos="zoom-in" data-aos-delay="300">
+              <div className="p-6 md:p-8 bg-card border border-border rounded-lg shadow-sm hover:shadow-lg transition-all duration-200 ease-out hover:-translate-y-2 hover:scale-[1.03]" data-aos="fade-up" data-aos-duration="800" data-aos-delay="300">
                 <Leaf className="h-8 w-8 md:h-10 md:w-10 text-primary mb-4" />
                 <h3 className="font-serif text-xl md:text-2xl font-bold text-foreground mb-4">Growth</h3>
                 <p className="text-base md:text-lg text-muted-foreground leading-relaxed">
@@ -133,6 +135,19 @@ const About = () => {
                 </p>
               </div>
             </div>
+          </section>
+
+          {/* Corporate Flow Chart */}
+          <section className="mb-12 md:mb-16 lg:mb-20" data-aos="fade-up">
+            <h2 className="font-serif text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-bold text-foreground mb-4 md:mb-6" data-aos="fade-down">
+              Corporate Flow Chart
+            </h2>
+            <div className="w-32 h-1 bg-primary mb-6 md:mb-8"></div>
+            <p className="text-base md:text-lg text-muted-foreground leading-relaxed mb-8 max-w-3xl">
+              Our organizational structure demonstrates the clear hierarchy and relationships between Lemcorian and its divisions, 
+              showcasing how each division operates under the corporate umbrella while maintaining specialized focus areas.
+            </p>
+            <SVGFlowChart />
           </section>
 
           {/* Sustainability & Responsibility */}
