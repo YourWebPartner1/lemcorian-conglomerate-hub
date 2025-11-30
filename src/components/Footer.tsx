@@ -5,7 +5,7 @@ const Footer = () => {
     <footer 
       className="relative border-t border-[#1b2942] mt-0 bg-cover bg-center"
       style={{ 
-        backgroundImage: `linear-gradient(to bottom, rgba(10, 26, 63, 0.92), rgba(10, 26, 63, 0.88)), url(${import.meta.env.BASE_URL}/global-reach.jpg)` 
+        backgroundImage: `linear-gradient(to bottom, rgba(10, 26, 63, 0.92), rgba(10, 26, 63, 0.88)), url(/global-reach.jpg)` 
       }}
     >
       {/* Subtle Grid Pattern Overlay */}
@@ -35,7 +35,7 @@ const Footer = () => {
             <ul className="space-y-3 text-sm md:text-base">
               <li>
                 <Link 
-                  to={`${import.meta.env.BASE_URL}`}
+                  to="/"
                   className="text-primary-foreground/80 hover:text-primary-foreground hover:underline transition-all duration-200 cursor-pointer leading-relaxed block"
                   aria-label="Navigate to homepage"
                 >

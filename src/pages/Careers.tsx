@@ -10,7 +10,7 @@ const Careers = () => {
         title="Careers"
         description="Build your future with Lemcorian. Join a diversified conglomerate offering career opportunities across agricultural products, chemicals, and medical equipment divisions. Explore current openings and professional development programs."
         keywords="Lemcorian careers, jobs, employment, career opportunities, work at Lemcorian, corporate jobs, agricultural jobs, chemical industry jobs, medical equipment jobs"
-        image={`${import.meta.env.BASE_URL}/careers-background.jpg`}
+        image="/careers-background.jpg"
         url="/careers"
       />
       <Navigation />
@@ -19,7 +19,7 @@ const Careers = () => {
         {/* Hero Section */}
         <section 
           className="pt-10 md:pt-20 lg:pt-28 pb-12 md:pb-20 bg-cover bg-center relative"
-          style={{ backgroundImage: `linear-gradient(to bottom, rgba(10, 26, 63, 0.85), rgba(10, 26, 63, 0.75)), url(${import.meta.env.BASE_URL}/careers-background.jpg)` }}
+          style={{ backgroundImage: `linear-gradient(to bottom, rgba(10, 26, 63, 0.85), rgba(10, 26, 63, 0.75)), url(/careers-background.jpg)` }}
         >
           <div className="absolute inset-0 bg-primary/85"></div>
           <div className="container mx-auto px-4 relative z-10" data-aos="fade-up">

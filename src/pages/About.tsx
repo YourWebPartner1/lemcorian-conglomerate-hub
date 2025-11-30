@@ -10,7 +10,7 @@ const About = () => {
         title="About Lemcorian"
         description="Learn about Lemcorian, a global multidivision conglomerate with operations spanning agriculture, chemicals, and medical equipment. Discover our values, divisions, and commitment to excellence."
         keywords="Lemcorian, about, corporate, conglomerate, agriculture, chemicals, medical equipment, global operations, company values, sustainability"
-        image={`${import.meta.env.BASE_URL}/about-background.jpg`}
+        image="/about-background.jpg"
         url="/about"
       />
       <Navigation />

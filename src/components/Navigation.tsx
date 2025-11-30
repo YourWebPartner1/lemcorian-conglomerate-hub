@@ -8,7 +8,7 @@ const Navigation = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   const navLinks = [
-    { path: `${import.meta.env.BASE_URL}`, label: "Home" },
+    { path: "/", label: "Home" },
     { path: "/about", label: "About" },
     { path: "/divisions", label: "Divisions" },
     { path: "/leadership", label: "Leadership" },
@@ -19,10 +19,7 @@ const Navigation = () => {
   ];
 
   const isActive = (path: string) => {
-    // Normalize paths for comparison - handle BASE_URL
-    const baseUrl = import.meta.env.BASE_URL;
-    const normalizedPath = path === baseUrl ? "/" : path;
-    return location.pathname === normalizedPath || location.pathname === path;
+    return location.pathname === path;
   };
 
   return (
@@ -30,7 +27,7 @@ const Navigation = () => {
       <div className="container mx-auto px-4 pb-4">
         <div className="flex items-center justify-between h-16">
           <Link 
-            to={`${import.meta.env.BASE_URL}`}
+            to="/"
             className="text-xl font-bold text-primary font-serif cursor-pointer transition-colors hover:text-primary/90"
             aria-label="Navigate to Lemcorian homepage"
           >
