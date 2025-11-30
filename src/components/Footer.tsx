@@ -35,7 +35,7 @@ const Footer = () => {
             <ul className="space-y-3 text-sm md:text-base">
               <li>
                 <Link 
-                  to="/" 
+                  to={`${import.meta.env.BASE_URL}`}
                   className="text-primary-foreground/80 hover:text-primary-foreground hover:underline transition-all duration-200 cursor-pointer leading-relaxed block"
                   aria-label="Navigate to homepage"
                 >

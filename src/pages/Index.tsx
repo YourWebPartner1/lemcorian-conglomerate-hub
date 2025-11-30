@@ -13,7 +13,7 @@ const Index = () => {
         description="Lemcorian is a global conglomerate operating across agricultural products, chemicals, and medical equipment. Discover our diversified business divisions and global operations."
         keywords="Lemcorian, conglomerate, agriculture, chemicals, medical equipment, corporate, global enterprise, agricultural products, coffee, vegetables, industrial chemicals, pharmaceutical, medical supplies"
         image={`${import.meta.env.BASE_URL}/hero-background-premium.jpg`}
-        url="/"
+        url={`${import.meta.env.BASE_URL}`}
       />
       <Navigation />
       
