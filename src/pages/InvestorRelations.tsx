@@ -1,5 +1,7 @@
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
+import investorBackground from "@/assets/investor-background.jpg";
+import { TrendingUp, DollarSign, Globe2 } from "lucide-react";
 
 const InvestorRelations = () => {
   return (
@@ -8,35 +10,51 @@ const InvestorRelations = () => {
       
       <main className="flex-1">
         {/* Hero Section */}
-        <section className="py-24 md:py-32 bg-primary text-primary-foreground">
-          <div className="container mx-auto px-4">
-            <h1 className="font-serif text-4xl md:text-6xl font-bold mb-6">
+        <section 
+          className="py-24 md:py-32 bg-cover bg-center relative"
+          style={{ backgroundImage: `url(${investorBackground})` }}
+        >
+          <div className="absolute inset-0 bg-primary/90"></div>
+          <div className="container mx-auto px-4 relative z-10">
+            <h1 className="font-serif text-4xl md:text-6xl font-bold mb-6 text-primary-foreground">
               Investor Relations
             </h1>
             <p className="text-xl md:text-2xl max-w-3xl text-primary-foreground/90 leading-relaxed">
-              Lemcorian Group is committed to transparency, structured growth, and sustainable value creation. We maintain clear communication with our stakeholders and uphold the highest standards of corporate governance.
+              Transparent communication and sustainable value creation for our stakeholders.
             </p>
           </div>
         </section>
 
         {/* Corporate Statistics */}
-        <section className="py-20 md:py-28 bg-muted/20">
-          <div className="container mx-auto px-4">
-            <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
-              <div className="text-center p-8">
-                <div className="font-serif text-5xl md:text-6xl font-bold text-primary mb-4">3</div>
-                <div className="text-xl font-semibold text-foreground mb-2">Business Divisions</div>
-                <p className="text-muted-foreground">Diversified across key sectors</p>
+        <section className="py-20 md:py-28 bg-muted/30">
+          <div className="container mx-auto px-4 max-w-6xl">
+            <div className="text-center mb-16">
+              <h2 className="font-serif text-3xl md:text-5xl font-bold text-foreground mb-6">
+                Corporate Statistics
+              </h2>
+              <div className="w-32 h-1 bg-primary mx-auto"></div>
+            </div>
+
+            <div className="grid md:grid-cols-3 gap-10">
+              <div className="text-center p-10 bg-card border border-border rounded-lg shadow-md hover:shadow-xl transition-all duration-300 hover:scale-105">
+                <Globe2 className="h-14 w-14 text-primary mx-auto mb-4" />
+                <div className="text-4xl md:text-5xl font-bold text-foreground mb-3">25+</div>
+                <p className="text-xl text-muted-foreground">Countries</p>
+                <p className="text-sm text-muted-foreground/80 mt-2">Active global operations</p>
               </div>
-              <div className="text-center p-8 border-l-2 border-r-2 border-border">
-                <div className="font-serif text-5xl md:text-6xl font-bold text-primary mb-4">Global</div>
-                <div className="text-xl font-semibold text-foreground mb-2">Market Presence</div>
-                <p className="text-muted-foreground">Operations across continents</p>
+
+              <div className="text-center p-10 bg-card border border-border rounded-lg shadow-md hover:shadow-xl transition-all duration-300 hover:scale-105">
+                <TrendingUp className="h-14 w-14 text-primary mx-auto mb-4" />
+                <div className="text-4xl md:text-5xl font-bold text-foreground mb-3">3</div>
+                <p className="text-xl text-muted-foreground">Major Divisions</p>
+                <p className="text-sm text-muted-foreground/80 mt-2">Diversified portfolio</p>
               </div>
-              <div className="text-center p-8">
-                <div className="font-serif text-5xl md:text-6xl font-bold text-primary mb-4">24/7</div>
-                <div className="text-xl font-semibold text-foreground mb-2">Operational</div>
-                <p className="text-muted-foreground">Continuous business excellence</p>
+
+              <div className="text-center p-10 bg-card border border-border rounded-lg shadow-md hover:shadow-xl transition-all duration-300 hover:scale-105">
+                <DollarSign className="h-14 w-14 text-primary mx-auto mb-4" />
+                <div className="text-4xl md:text-5xl font-bold text-foreground mb-3">Multi</div>
+                <p className="text-xl text-muted-foreground">Market Sectors</p>
+                <p className="text-sm text-muted-foreground/80 mt-2">Agricultural, Chemical, Medical</p>
               </div>
             </div>
           </div>

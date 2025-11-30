@@ -6,7 +6,8 @@ import heroBackgroundPremium from "@/assets/hero-background-premium.jpg";
 import agriculturalProducts from "@/assets/agricultural-products.jpg";
 import chemicals from "@/assets/chemicals.jpg";
 import medicalEquipment from "@/assets/medical-equipment.jpg";
-import { CheckCircle2 } from "lucide-react";
+import globalReach from "@/assets/global-reach.jpg";
+import { CheckCircle2, Globe2, TrendingUp, Award } from "lucide-react";
 
 const Index = () => {
   return (
@@ -167,6 +168,52 @@ const Index = () => {
         </div>
       </section>
 
+      {/* Global Reach Section */}
+      <section 
+        className="py-28 md:py-32 bg-cover bg-center relative"
+        style={{ backgroundImage: `url(${globalReach})` }}
+      >
+        <div className="absolute inset-0 bg-primary/90"></div>
+        <div className="container mx-auto px-4 max-w-6xl relative z-10">
+          <div className="text-center mb-16">
+            <h2 className="font-serif text-4xl md:text-5xl font-bold text-primary-foreground mb-6">
+              Global Reach
+            </h2>
+            <div className="w-32 h-1 bg-primary-foreground mx-auto mb-8"></div>
+            <p className="text-xl text-primary-foreground/90 max-w-3xl mx-auto leading-relaxed">
+              Operations across key international markets with established presence in multiple continents. 
+              Delivering excellence through strategic partnerships and regional expertise.
+            </p>
+          </div>
+
+          <div className="grid md:grid-cols-3 gap-8 mt-16">
+            <div className="text-center p-8 bg-primary-foreground/10 backdrop-blur-sm rounded-lg border border-primary-foreground/20">
+              <Globe2 className="h-12 w-12 text-primary-foreground mx-auto mb-4" />
+              <h3 className="font-semibold text-primary-foreground text-2xl mb-3">25+ Countries</h3>
+              <p className="text-primary-foreground/80 text-lg">
+                Active operations across key global markets
+              </p>
+            </div>
+
+            <div className="text-center p-8 bg-primary-foreground/10 backdrop-blur-sm rounded-lg border border-primary-foreground/20">
+              <TrendingUp className="h-12 w-12 text-primary-foreground mx-auto mb-4" />
+              <h3 className="font-semibold text-primary-foreground text-2xl mb-3">Sustainable Growth</h3>
+              <p className="text-primary-foreground/80 text-lg">
+                Consistent expansion across all divisions
+              </p>
+            </div>
+
+            <div className="text-center p-8 bg-primary-foreground/10 backdrop-blur-sm rounded-lg border border-primary-foreground/20">
+              <Award className="h-12 w-12 text-primary-foreground mx-auto mb-4" />
+              <h3 className="font-semibold text-primary-foreground text-2xl mb-3">Industry Leadership</h3>
+              <p className="text-primary-foreground/80 text-lg">
+                Recognized excellence in quality and service
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Why Choose Lemcorian Section */}
       <section className="py-28 md:py-32 bg-background">
         <div className="container mx-auto px-4 max-w-6xl">
@@ -178,7 +225,7 @@ const Index = () => {
           </div>
 
           <div className="grid md:grid-cols-2 gap-10">
-            <div className="flex items-start gap-6 p-6 rounded-lg bg-card border border-border hover:shadow-md transition-shadow">
+            <div className="flex items-start gap-6 p-6 rounded-lg bg-card border border-border hover:shadow-lg transition-all duration-300 hover:scale-105">
               <CheckCircle2 className="h-8 w-8 text-primary flex-shrink-0 mt-1" />
               <div>
                 <h3 className="font-semibold text-foreground text-xl mb-3">Global Presence</h3>
@@ -188,7 +235,7 @@ const Index = () => {
               </div>
             </div>
 
-            <div className="flex items-start gap-6 p-6 rounded-lg bg-card border border-border hover:shadow-md transition-shadow">
+            <div className="flex items-start gap-6 p-6 rounded-lg bg-card border border-border hover:shadow-lg transition-all duration-300 hover:scale-105">
               <CheckCircle2 className="h-8 w-8 text-primary flex-shrink-0 mt-1" />
               <div>
                 <h3 className="font-semibold text-foreground text-xl mb-3">Quality Assurance</h3>
@@ -198,7 +245,7 @@ const Index = () => {
               </div>
             </div>
 
-            <div className="flex items-start gap-6 p-6 rounded-lg bg-card border border-border hover:shadow-md transition-shadow">
+            <div className="flex items-start gap-6 p-6 rounded-lg bg-card border border-border hover:shadow-lg transition-all duration-300 hover:scale-105">
               <CheckCircle2 className="h-8 w-8 text-primary flex-shrink-0 mt-1" />
               <div>
                 <h3 className="font-semibold text-foreground text-xl mb-3">Diverse Portfolio</h3>
@@ -208,7 +255,7 @@ const Index = () => {
               </div>
             </div>
 
-            <div className="flex items-start gap-6 p-6 rounded-lg bg-card border border-border hover:shadow-md transition-shadow">
+            <div className="flex items-start gap-6 p-6 rounded-lg bg-card border border-border hover:shadow-lg transition-all duration-300 hover:scale-105">
               <CheckCircle2 className="h-8 w-8 text-primary flex-shrink-0 mt-1" />
               <div>
                 <h3 className="font-semibold text-foreground text-xl mb-3">Sustainable Practices</h3>
@@ -218,7 +265,7 @@ const Index = () => {
               </div>
             </div>
 
-            <div className="flex items-start gap-6 p-6 rounded-lg bg-card border border-border hover:shadow-md transition-shadow">
+            <div className="flex items-start gap-6 p-6 rounded-lg bg-card border border-border hover:shadow-lg transition-all duration-300 hover:scale-105">
               <CheckCircle2 className="h-8 w-8 text-primary flex-shrink-0 mt-1" />
               <div>
                 <h3 className="font-semibold text-foreground text-xl mb-3">Industry Expertise</h3>
@@ -228,7 +275,7 @@ const Index = () => {
               </div>
             </div>
 
-            <div className="flex items-start gap-6 p-6 rounded-lg bg-card border border-border hover:shadow-md transition-shadow">
+            <div className="flex items-start gap-6 p-6 rounded-lg bg-card border border-border hover:shadow-lg transition-all duration-300 hover:scale-105">
               <CheckCircle2 className="h-8 w-8 text-primary flex-shrink-0 mt-1" />
               <div>
                 <h3 className="font-semibold text-foreground text-xl mb-3">Reliable Partnership</h3>
