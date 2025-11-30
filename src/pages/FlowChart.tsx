@@ -60,11 +60,23 @@ const FlowChart = () => {
                 
                 {/* Sub-items */}
                 <div className="w-full md:w-auto mt-3 md:mt-4 space-y-2.5 md:space-y-3">
+                  {/* Coffee Subcategories */}
                   <div className="bg-card border border-border/60 rounded-lg shadow-corporate px-4 md:px-5 py-2.5 md:py-3 text-center card-hover group" data-aos="fade-up" data-aos-duration="600" data-aos-delay="100">
-                    <p className="text-sm md:text-base font-medium text-muted-foreground group-hover:text-primary transition-colors duration-300">Coffee</p>
+                    <p className="text-sm md:text-base font-medium text-muted-foreground group-hover:text-primary transition-colors duration-300 mb-1.5">Coffee</p>
+                    <div className="flex flex-col gap-1.5 mt-2">
+                      <div className="bg-muted/50 rounded px-2 py-1 text-xs md:text-sm">Speciality Coffee</div>
+                      <div className="bg-muted/50 rounded px-2 py-1 text-xs md:text-sm">Common Coffee</div>
+                    </div>
                   </div>
+                  {/* Vegetables Items */}
                   <div className="bg-card border border-border/60 rounded-lg shadow-corporate px-4 md:px-5 py-2.5 md:py-3 text-center card-hover group" data-aos="fade-up" data-aos-duration="600" data-aos-delay="150">
-                    <p className="text-sm md:text-base font-medium text-muted-foreground group-hover:text-primary transition-colors duration-300">Vegetables</p>
+                    <p className="text-sm md:text-base font-medium text-muted-foreground group-hover:text-primary transition-colors duration-300 mb-1.5">Vegetables</p>
+                    <div className="flex flex-wrap justify-center gap-1 mt-2">
+                      <div className="bg-muted/50 rounded px-2 py-1 text-xs">Onion</div>
+                      <div className="bg-muted/50 rounded px-2 py-1 text-xs">Ginger</div>
+                      <div className="bg-muted/50 rounded px-2 py-1 text-xs">Garlic</div>
+                      <div className="bg-muted/50 rounded px-2 py-1 text-xs">Potato</div>
+                    </div>
                   </div>
                 </div>
               </div>

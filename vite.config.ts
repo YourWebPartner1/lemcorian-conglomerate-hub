@@ -11,6 +11,14 @@ export default defineConfig(({ mode }) => ({
     port: 5173,
     strictPort: false,
     open: true,
+    hmr: {
+      overlay: true,
+      clientPort: 5173,
+    },
+    watch: {
+      usePolling: false,
+      interval: 100,
+    },
   },
   plugins: [react(), mode === "development" && componentTagger()].filter(Boolean),
   resolve: {

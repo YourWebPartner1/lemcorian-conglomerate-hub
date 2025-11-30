@@ -1,7 +1,7 @@
 const SVGFlowChart = () => {
   // SVG dimensions
   const svgWidth = 1200;
-  const svgHeight = 600;
+  const svgHeight = 750;
   
   // Node positions
   const rootX = svgWidth / 2;
@@ -15,6 +15,12 @@ const SVGFlowChart = () => {
   
   const subItemY = 420;
   const subItemSpacing = 100;
+  // Agricultural Products branch positions (side-by-side)
+  const coffeeBranchX = division1X - 80; // Left branch for Coffee
+  const vegetableBranchX = division1X + 80; // Right branch for Vegetables
+  const branchStartY = 350; // Where branches start from Agricultural Products
+  const branchItemY = 380; // Starting Y for branch items
+  const branchItemSpacing = 35; // Vertical spacing between items
   
   return (
     <div className="w-full py-8 md:py-12 bg-muted/20 rounded-lg overflow-x-auto">
@@ -115,59 +121,256 @@ const SVGFlowChart = () => {
               Agricultural Products
             </text>
 
-            {/* Connector to Sub-items */}
+            {/* Connector from Agricultural Products to branch split point */}
             <line
               x1={division1X}
               y1={divisionY + 20}
               x2={division1X}
-              y2={subItemY - 20}
+              y2={branchStartY}
+              stroke="hsl(var(--primary))"
+              strokeWidth="2"
+            />
+
+            {/* Branch split connectors - one to Coffee (left), one to Vegetables (right) */}
+            <line
+              x1={division1X}
+              y1={branchStartY}
+              x2={coffeeBranchX}
+              y2={branchStartY}
+              stroke="hsl(var(--primary))"
+              strokeWidth="2"
+            />
+            <line
+              x1={coffeeBranchX}
+              y1={branchStartY}
+              x2={coffeeBranchX}
+              y2={branchItemY - 10}
               stroke="hsl(var(--primary))"
               strokeWidth="2"
               markerEnd="url(#arrowhead)"
             />
 
-            {/* Sub-items */}
-            <rect
-              x={division1X - 50}
-              y={subItemY - 15}
-              width="100"
-              height="30"
-              rx="6"
-              fill="hsl(var(--card))"
-              stroke="hsl(var(--border))"
-              strokeWidth="1.5"
-              filter="url(#shadow)"
+            <line
+              x1={division1X}
+              y1={branchStartY}
+              x2={vegetableBranchX}
+              y2={branchStartY}
+              stroke="hsl(var(--primary))"
+              strokeWidth="2"
             />
-            <text
-              x={division1X}
-              y={subItemY + 5}
-              textAnchor="middle"
-              className="font-medium fill-muted-foreground"
-              style={{ fontSize: "14px" }}
-            >
-              Coffee
-            </text>
+            <line
+              x1={vegetableBranchX}
+              y1={branchStartY}
+              x2={vegetableBranchX}
+              y2={branchItemY - 10}
+              stroke="hsl(var(--primary))"
+              strokeWidth="2"
+              markerEnd="url(#arrowhead)"
+            />
 
-            <rect
-              x={division1X - 50}
-              y={subItemY + 25}
-              width="100"
-              height="30"
-              rx="6"
-              fill="hsl(var(--card))"
-              stroke="hsl(var(--border))"
-              strokeWidth="1.5"
-              filter="url(#shadow)"
-            />
-            <text
-              x={division1X}
-              y={subItemY + 45}
-              textAnchor="middle"
-              className="font-medium fill-muted-foreground"
-              style={{ fontSize: "14px" }}
-            >
-              Vegetables
-            </text>
+            {/* Coffee Branch (Left Side) */}
+            <g>
+              {/* Branch Label: Coffee */}
+              <rect
+                x={coffeeBranchX - 50}
+                y={branchItemY - 15}
+                width="100"
+                height="30"
+                rx="6"
+                fill="hsl(var(--card))"
+                stroke="hsl(var(--primary))"
+                strokeWidth="1.5"
+                filter="url(#shadow)"
+              />
+              <text
+                x={coffeeBranchX}
+                y={branchItemY + 5}
+                textAnchor="middle"
+                className="font-semibold fill-foreground"
+                style={{ fontSize: "13px" }}
+              >
+                Coffee
+              </text>
+
+              {/* Connector from Coffee label to items */}
+              <line
+                x1={coffeeBranchX}
+                y1={branchItemY + 15}
+                x2={coffeeBranchX}
+                y2={branchItemY + 30}
+                stroke="hsl(var(--primary))"
+                strokeWidth="1.5"
+                markerEnd="url(#arrowhead)"
+              />
+
+              {/* Speciality Coffee */}
+              <rect
+                x={coffeeBranchX - 60}
+                y={branchItemY + 40}
+                width="120"
+                height="28"
+                rx="6"
+                fill="hsl(var(--card))"
+                stroke="hsl(var(--border))"
+                strokeWidth="1.5"
+                filter="url(#shadow)"
+              />
+              <text
+                x={coffeeBranchX}
+                y={branchItemY + 58}
+                textAnchor="middle"
+                className="font-medium fill-muted-foreground"
+                style={{ fontSize: "13px" }}
+              >
+                Speciality Coffee
+              </text>
+
+              {/* Common Coffee */}
+              <rect
+                x={coffeeBranchX - 60}
+                y={branchItemY + 75}
+                width="120"
+                height="28"
+                rx="6"
+                fill="hsl(var(--card))"
+                stroke="hsl(var(--border))"
+                strokeWidth="1.5"
+                filter="url(#shadow)"
+              />
+              <text
+                x={coffeeBranchX}
+                y={branchItemY + 93}
+                textAnchor="middle"
+                className="font-medium fill-muted-foreground"
+                style={{ fontSize: "13px" }}
+              >
+                Common Coffee
+              </text>
+            </g>
+
+            {/* Vegetables Branch (Right Side) */}
+            <g>
+              {/* Branch Label: Vegetables */}
+              <rect
+                x={vegetableBranchX - 60}
+                y={branchItemY - 15}
+                width="120"
+                height="30"
+                rx="6"
+                fill="hsl(var(--card))"
+                stroke="hsl(var(--primary))"
+                strokeWidth="1.5"
+                filter="url(#shadow)"
+              />
+              <text
+                x={vegetableBranchX}
+                y={branchItemY + 5}
+                textAnchor="middle"
+                className="font-semibold fill-foreground"
+                style={{ fontSize: "13px" }}
+              >
+                Vegetables
+              </text>
+
+              {/* Connector from Vegetables label to items */}
+              <line
+                x1={vegetableBranchX}
+                y1={branchItemY + 15}
+                x2={vegetableBranchX}
+                y2={branchItemY + 30}
+                stroke="hsl(var(--primary))"
+                strokeWidth="1.5"
+                markerEnd="url(#arrowhead)"
+              />
+
+              {/* Onion */}
+              <rect
+                x={vegetableBranchX - 50}
+                y={branchItemY + 40}
+                width="100"
+                height="28"
+                rx="6"
+                fill="hsl(var(--card))"
+                stroke="hsl(var(--border))"
+                strokeWidth="1.5"
+                filter="url(#shadow)"
+              />
+              <text
+                x={vegetableBranchX}
+                y={branchItemY + 58}
+                textAnchor="middle"
+                className="font-medium fill-muted-foreground"
+                style={{ fontSize: "13px" }}
+              >
+                Onion
+              </text>
+
+              {/* Ginger */}
+              <rect
+                x={vegetableBranchX - 50}
+                y={branchItemY + 75}
+                width="100"
+                height="28"
+                rx="6"
+                fill="hsl(var(--card))"
+                stroke="hsl(var(--border))"
+                strokeWidth="1.5"
+                filter="url(#shadow)"
+              />
+              <text
+                x={vegetableBranchX}
+                y={branchItemY + 93}
+                textAnchor="middle"
+                className="font-medium fill-muted-foreground"
+                style={{ fontSize: "13px" }}
+              >
+                Ginger
+              </text>
+
+              {/* Garlic */}
+              <rect
+                x={vegetableBranchX - 50}
+                y={branchItemY + 110}
+                width="100"
+                height="28"
+                rx="6"
+                fill="hsl(var(--card))"
+                stroke="hsl(var(--border))"
+                strokeWidth="1.5"
+                filter="url(#shadow)"
+              />
+              <text
+                x={vegetableBranchX}
+                y={branchItemY + 128}
+                textAnchor="middle"
+                className="font-medium fill-muted-foreground"
+                style={{ fontSize: "13px" }}
+              >
+                Garlic
+              </text>
+
+              {/* Potato */}
+              <rect
+                x={vegetableBranchX - 50}
+                y={branchItemY + 145}
+                width="100"
+                height="28"
+                rx="6"
+                fill="hsl(var(--card))"
+                stroke="hsl(var(--border))"
+                strokeWidth="1.5"
+                filter="url(#shadow)"
+              />
+              <text
+                x={vegetableBranchX}
+                y={branchItemY + 163}
+                textAnchor="middle"
+                className="font-medium fill-muted-foreground"
+                style={{ fontSize: "13px" }}
+              >
+                Potato
+              </text>
+            </g>
           </g>
 
           {/* Arrow from Division 1 to Division 2 */}
